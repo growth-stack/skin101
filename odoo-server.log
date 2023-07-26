@@ -1,0 +1,10 @@
+2023-07-24 08:48:54,069 83918 ERROR elite_emr odoo.sql_db: bad query: 
+            SELECT latest_version
+            FROM ir_module_module
+             WHERE name='base'
+        
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2023-07-24 08:48:54,069 83918 WARNING elite_emr odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database elite_emr. 
