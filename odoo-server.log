@@ -1,0 +1,1401 @@
+2023-08-02 04:47:31,886 29124 WARNING elite_emr_16 odoo.addons.base.models.ir_cron: Skipping database elite_emr_16 because of modules to install/upgrade/remove. 
+2023-08-02 04:47:31,887 29124 ERROR elite_emr odoo.sql_db: bad query: 
+            SELECT latest_version
+            FROM ir_module_module
+             WHERE name='base'
+        
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2023-08-02 04:47:31,887 29124 WARNING elite_emr odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database elite_emr. 
+2023-08-02 04:48:31,913 29124 WARNING elite_emr_16 odoo.addons.base.models.ir_cron: Skipping database elite_emr_16 because of modules to install/upgrade/remove. 
+2023-08-02 04:48:31,917 29124 ERROR elite_emr odoo.sql_db: bad query: 
+            SELECT latest_version
+            FROM ir_module_module
+             WHERE name='base'
+        
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2023-08-02 04:48:31,917 29124 WARNING elite_emr odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database elite_emr. 
+2023-08-02 04:49:31,939 29124 WARNING elite_emr_16 odoo.addons.base.models.ir_cron: Skipping database elite_emr_16 because of modules to install/upgrade/remove. 
+2023-08-02 04:49:31,942 29124 ERROR elite_emr odoo.sql_db: bad query: 
+            SELECT latest_version
+            FROM ir_module_module
+             WHERE name='base'
+        
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2023-08-02 04:49:31,942 29124 WARNING elite_emr odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database elite_emr. 
+2023-08-02 04:50:31,951 29124 WARNING elite_emr_16 odoo.addons.base.models.ir_cron: Skipping database elite_emr_16 because of modules to install/upgrade/remove. 
+2023-08-02 04:50:31,958 29124 ERROR elite_emr odoo.sql_db: bad query: 
+            SELECT latest_version
+            FROM ir_module_module
+             WHERE name='base'
+        
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2023-08-02 04:50:31,959 29124 WARNING elite_emr odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database elite_emr. 
+2023-08-02 04:51:31,969 29124 WARNING elite_emr_16 odoo.addons.base.models.ir_cron: Skipping database elite_emr_16 because of modules to install/upgrade/remove. 
+2023-08-02 04:51:32,015 29124 ERROR elite_emr odoo.sql_db: bad query: 
+            SELECT latest_version
+            FROM ir_module_module
+             WHERE name='base'
+        
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2023-08-02 04:51:32,016 29124 WARNING elite_emr odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database elite_emr. 
+2023-08-02 04:52:29,850 30146 WARNING ? py.warnings: /Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/config.py:565: DeprecationWarning: The longpolling-port is a deprecated alias to the gevent-port option, please use the latter.
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo-bin", line 8, in <module>
+    odoo.cli.main()
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/cli/command.py", line 56, in main
+    o.run(args)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/cli/server.py", line 179, in run
+    main(args)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/cli/server.py", line 127, in main
+    odoo.tools.config.parse_config(args)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/config.py", line 378, in parse_config
+    self._warn_deprecated_options()
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/config.py", line 565, in _warn_deprecated_options
+    warnings.warn(
+ 
+2023-08-02 04:52:29,850 30146 INFO ? odoo: Odoo version 16.0 
+2023-08-02 04:52:29,850 30146 INFO ? odoo: Using configuration file at /Users/georgeohia/Projects/odooproj/skin101/odoo.conf 
+2023-08-02 04:52:29,851 30146 INFO ? odoo: addons paths: ['/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons', '/Users/georgeohia/Library/Application Support/Odoo/addons/16.0', '/Users/georgeohia/Projects/odooproj/odoo16_enterprise', '/Users/georgeohia/Projects/odooproj/odoo16/addons', '/Users/georgeohia/Projects/odooproj/skin101'] 
+2023-08-02 04:52:29,851 30146 INFO ? odoo: database: odoo@default:5432 
+2023-08-02 04:52:30,108 30146 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2023-08-02 04:52:30,763 30146 INFO ? odoo.service.server: HTTP service (werkzeug) running on ehaadmins-MacBook-Pro-4.local:8016 
+2023-08-02 04:52:30,874 30146 ERROR ? odoo.modules.loading: Database elite_emr not initialized, you can force it with `-i base` 
+2023-08-02 04:52:30,874 30146 INFO ? odoo.modules.registry: Registry loaded in 0.176s 
+2023-08-02 04:52:30,982 30146 INFO elite_emr_16 odoo.modules.loading: loading 1 modules... 
+2023-08-02 04:52:30,997 30146 INFO elite_emr_16 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2023-08-02 04:52:31,054 30146 WARNING elite_emr_16 odoo.modules.graph: module web_responsive: not installable, skipped 
+2023-08-02 04:52:31,056 30146 WARNING elite_emr_16 odoo.modules.module: Missing `license` key in manifest for 'web_timer_widget', defaulting to LGPL-3 
+2023-08-02 04:52:31,146 30146 INFO elite_emr_16 odoo.modules.loading: loading 44 modules... 
+2023-08-02 04:52:31,871 30146 WARNING elite_emr_16 odoo.api.create: The model odoo.addons.acs_hms.models.patient is not overriding the create method in batch 
+2023-08-02 04:52:31,874 30146 WARNING elite_emr_16 odoo.api.create: The model odoo.addons.acs_hms.models.doctor is not overriding the create method in batch 
+2023-08-02 04:52:31,876 30146 WARNING elite_emr_16 odoo.api.create: The model odoo.addons.acs_hms.models.appointment is not overriding the create method in batch 
+2023-08-02 04:52:31,889 30146 WARNING elite_emr_16 odoo.api.create: The model odoo.addons.acs_hms.models.treatment is not overriding the create method in batch 
+2023-08-02 04:52:31,941 30146 INFO elite_emr_16 odoo.modules.loading: 44 modules loaded in 0.79s, 0 queries (+0 extra) 
+2023-08-02 04:52:32,058 30146 WARNING elite_emr_16 odoo.fields: Field hr.employee.public.birthday: unknown parameter 'tracking', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:52:32,077 30146 WARNING elite_emr_16 odoo.fields: Field hms.patient.disease.disease_severity: unknown parameter 'sort', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:52:32,077 30146 WARNING elite_emr_16 odoo.fields: Field hms.patient.disease.status: unknown parameter 'sort', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:52:32,077 30146 WARNING elite_emr_16 odoo.fields: Field hms.patient.disease.allergy_type: unknown parameter 'sort', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:52:32,078 30146 WARNING elite_emr_16 odoo.fields: Field hms.treatment.disease_severity: unknown parameter 'sort', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:52:32,156 30146 ERROR elite_emr_16 odoo.modules.loading: Some modules are not loaded, some dependencies or manifest may be missing: ['web_responsive'] 
+2023-08-02 04:52:32,156 30146 ERROR elite_emr_16 odoo.modules.loading: Some modules have inconsistent states, some dependencies may be missing: ['acs_hms_hospitalization', 'acs_hms_surgery'] 
+2023-08-02 04:52:32,156 30146 INFO elite_emr_16 odoo.modules.loading: Modules loaded. 
+2023-08-02 04:52:32,160 30146 INFO elite_emr_16 odoo.modules.registry: Registry loaded in 1.285s 
+2023-08-02 04:52:32,166 30146 INFO elite_emr_16 odoo.addons.base.models.ir_http: Generating routing map for key None 
+2023-08-02 04:52:32,184 30146 INFO elite_emr_16 odoo.addons.base.models.ir_http: Generating routing map for key None 
+2023-08-02 04:52:32,439 30146 INFO elite_emr_16 werkzeug: 127.0.0.1 - - [02/Aug/2023 04:52:32] "GET /websocket HTTP/1.1" 101 - 6 0.032 1.177
+2023-08-02 04:52:32,450 30146 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2023-08-02 04:52:33,323 30146 INFO elite_emr_16 werkzeug: 127.0.0.1 - - [02/Aug/2023 04:52:33] "GET /web HTTP/1.1" 200 - 109 0.160 2.354
+2023-08-02 04:52:34,476 30146 INFO elite_emr_16 werkzeug: 127.0.0.1 - - [02/Aug/2023 04:52:34] "POST /mail/init_messaging HTTP/1.1" 200 - 60 0.081 0.052
+2023-08-02 04:52:34,558 30146 INFO elite_emr_16 werkzeug: 127.0.0.1 - - [02/Aug/2023 04:52:34] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.037 0.019
+2023-08-02 04:52:34,775 30146 INFO elite_emr_16 werkzeug: 127.0.0.1 - - [02/Aug/2023 04:52:34] "POST /mail/load_message_failures HTTP/1.1" 200 - 4 0.009 0.010
+2023-08-02 04:52:35,814 30146 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'acs_hms_hospitalization', defaulting to LGPL-3 
+2023-08-02 04:52:35,814 30146 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'acs_hms_hospitalization', defaulting to LGPL-3 
+2023-08-02 04:52:35,815 30146 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'acs_hms_hospitalization', defaulting to LGPL-3 
+2023-08-02 04:52:35,820 30146 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'acs_hms_surgery', defaulting to LGPL-3 
+2023-08-02 04:52:35,820 30146 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'acs_hms_surgery', defaulting to LGPL-3 
+2023-08-02 04:52:35,820 30146 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'acs_hms_surgery', defaulting to LGPL-3 
+2023-08-02 04:52:35,834 30146 INFO elite_emr_16 werkzeug: 127.0.0.1 - - [02/Aug/2023 04:52:35] "GET /web/image/res.company/1/favicon HTTP/1.1" 304 - 5 0.005 1.285
+2023-08-02 04:52:35,835 30146 INFO elite_emr_16 werkzeug: 127.0.0.1 - - [02/Aug/2023 04:52:35] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 3 0.002 1.361
+2023-08-02 04:52:35,848 30146 INFO elite_emr_16 werkzeug: 127.0.0.1 - - [02/Aug/2023 04:52:35] "GET /web/image/res.company/1/favicon HTTP/1.1" 304 - 5 0.002 0.007
+2023-08-02 04:52:35,860 30146 INFO elite_emr_16 werkzeug: 127.0.0.1 - - [02/Aug/2023 04:52:35] "GET /web/image/res.company/1/favicon HTTP/1.1" 304 - 5 0.003 0.006
+2023-08-02 04:52:35,865 30146 INFO elite_emr_16 werkzeug: 127.0.0.1 - - [02/Aug/2023 04:52:35] "POST /web/action/load HTTP/1.1" 200 - 11 0.025 1.519
+2023-08-02 04:52:35,977 30146 INFO elite_emr_16 werkzeug: 127.0.0.1 - - [02/Aug/2023 04:52:35] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 45 0.037 0.068
+2023-08-02 04:52:36,020 30146 INFO elite_emr_16 werkzeug: 127.0.0.1 - - [02/Aug/2023 04:52:36] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.006 0.009
+2023-08-02 04:52:36,109 30146 INFO elite_emr_16 werkzeug: 127.0.0.1 - - [02/Aug/2023 04:52:36] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 41 0.056 0.060
+2023-08-02 04:52:38,217 30146 INFO elite_emr_16 odoo.addons.base.models.ir_module: ALLOW access to module.button_install_cancel on ['Hospitalization'] to user admin #2 via 127.0.0.1 
+2023-08-02 04:52:38,229 30146 INFO elite_emr_16 werkzeug: 127.0.0.1 - - [02/Aug/2023 04:52:38] "POST /web/dataset/call_button HTTP/1.1" 200 - 7 0.008 0.009
+2023-08-02 04:52:38,258 30146 INFO elite_emr_16 werkzeug: 127.0.0.1 - - [02/Aug/2023 04:52:38] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.003 0.016
+2023-08-02 04:52:40,017 30146 INFO elite_emr_16 odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_install on ['Hospital Laboratory Management'] to user admin #2 via 127.0.0.1 
+2023-08-02 04:52:40,019 30146 INFO elite_emr_16 odoo.addons.base.models.ir_module: User #2 triggered module installation 
+2023-08-02 04:52:40,020 30146 INFO elite_emr_16 odoo.addons.base.models.ir_module: ALLOW access to module.button_install on ['Hospital Laboratory Management'] to user admin #2 via 127.0.0.1 
+2023-08-02 04:52:40,117 30146 INFO elite_emr_16 odoo.modules.loading: loading 1 modules... 
+2023-08-02 04:52:40,127 30146 INFO elite_emr_16 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2023-08-02 04:52:40,154 30146 INFO elite_emr_16 odoo.modules.loading: updating modules list 
+2023-08-02 04:52:40,156 30146 INFO elite_emr_16 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 127.0.0.1 
+2023-08-02 04:52:41,043 30146 WARNING elite_emr_16 odoo.modules.graph: module web_responsive: not installable, skipped 
+2023-08-02 04:52:41,045 30146 INFO elite_emr_16 odoo.modules.loading: loading 44 modules... 
+2023-08-02 04:52:41,084 30146 INFO elite_emr_16 odoo.modules.loading: 44 modules loaded in 0.04s, 0 queries (+0 extra) 
+2023-08-02 04:52:41,087 30146 INFO elite_emr_16 odoo.modules.loading: loading 47 modules... 
+2023-08-02 04:52:41,087 30146 INFO elite_emr_16 odoo.modules.loading: Loading module acs_hms_surgery (44/47) 
+2023-08-02 04:52:41,100 30146 WARNING elite_emr_16 odoo.api.create: The model odoo.addons.acs_hms_surgery.models.surgery is not overriding the create method in batch 
+2023-08-02 04:52:41,264 30146 WARNING elite_emr_16 odoo.fields: Field hr.employee.public.birthday: unknown parameter 'tracking', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:52:41,279 30146 WARNING elite_emr_16 odoo.fields: Field hms.patient.disease.disease_severity: unknown parameter 'sort', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:52:41,279 30146 WARNING elite_emr_16 odoo.fields: Field hms.patient.disease.status: unknown parameter 'sort', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:52:41,279 30146 WARNING elite_emr_16 odoo.fields: Field hms.patient.disease.allergy_type: unknown parameter 'sort', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:52:41,280 30146 WARNING elite_emr_16 odoo.fields: Field hms.treatment.disease_severity: unknown parameter 'sort', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:52:41,318 30146 INFO elite_emr_16 odoo.modules.registry: module acs_hms_surgery: creating or updating database tables 
+2023-08-02 04:52:42,151 30146 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_surgery/security/ir.model.access.csv 
+2023-08-02 04:52:42,204 30146 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_surgery/security/security.xml 
+2023-08-02 04:52:42,228 30146 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_surgery/data/data.xml 
+2023-08-02 04:52:42,281 30146 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_surgery/report/surgery_report.xml 
+2023-08-02 04:52:42,337 30146 WARNING elite_emr_16 py.warnings: /Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py:299: DeprecationWarning: The <report> tag is deprecated, use a <record> tag for 'report_surgery'.
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 937, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 980, in _bootstrap_inner
+    self.run()
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 917, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Users/georgeohia/Projects/odooproj/skin101/env/lib/python3.9/site-packages/werkzeug/serving.py", line 329, in handle
+    rv = BaseHTTPRequestHandler.handle(self)
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/server.py", line 432, in handle
+    self.handle_one_request()
+  File "/Users/georgeohia/Projects/odooproj/skin101/env/lib/python3.9/site-packages/werkzeug/serving.py", line 364, in handle_one_request
+    return self.run_wsgi()
+  File "/Users/georgeohia/Projects/odooproj/skin101/env/lib/python3.9/site-packages/werkzeug/serving.py", line 306, in run_wsgi
+    execute(self.server.app)
+  File "/Users/georgeohia/Projects/odooproj/skin101/env/lib/python3.9/site-packages/werkzeug/serving.py", line 294, in execute
+    application_iter = app(environ, start_response)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1991, in __call__
+    response = request._serve_db()
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1587, in _serve_db
+    return service_model.retrying(self._serve_ir_http, self.env)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/service/model.py", line 134, in retrying
+    result = func()
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1614, in _serve_ir_http
+    response = self.dispatcher.dispatch(rule.endpoint, args)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1811, in dispatch
+    result = self.request.registry['ir.http']._dispatch(endpoint)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_http.py", line 154, in _dispatch
+    result = endpoint(**request.params)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 700, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/addons/web/controllers/dataset.py", line 46, in call_button
+    action = self._call_kw(model, method, args, kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/addons/web/controllers/dataset.py", line 33, in _call_kw
+    return call_kw(request.env[model], method, args, kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/api.py", line 461, in call_kw
+    result = _call_kw_multi(method, model, args, kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/api.py", line 448, in _call_kw_multi
+    result = method(recs, *args, **kwargs)
+  File "<decorator-gen-74>", line 2, in button_immediate_install
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_module.py", line 76, in check_and_log
+    return method(self, *args, **kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_module.py", line 491, in button_immediate_install
+    return self._button_immediate_function(type(self).button_install)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_module.py", line 615, in _button_immediate_function
+    registry = modules.registry.Registry.new(self._cr.dbname, update_module=True)
+  File "<decorator-gen-14>", line 2, in new
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/registry.py", line 90, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 487, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 371, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 230, in load_module_graph
+    load_data(cr, idref, mode, kind='data', package=package)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 71, in load_data
+    tools.convert_file(cr, package.name, filename, idref, mode, noupdate, kind)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 763, in convert_file
+    convert_xml_import(cr, module, fp, idref, mode, noupdate)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 829, in convert_xml_import
+    obj.parse(doc.getroot())
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 749, in parse
+    self._tag_root(de)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 698, in _tag_root
+    f(rec)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 299, in _tag_report
+    warnings.warn(f"The <report> tag is deprecated, use a <record> tag for {xml_id!r}.", DeprecationWarning)
+ 
+2023-08-02 04:52:42,393 30146 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_surgery/views/surgery_base.xml 
+2023-08-02 04:52:42,455 30146 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_surgery/views/surgery_view.xml 
+2023-08-02 04:52:42,517 30146 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_surgery/views/hms_base_view.xml 
+2023-08-02 04:52:42,533 30146 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_surgery/views/res_config_settings_views.xml 
+2023-08-02 04:52:42,619 30146 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_surgery/views/menu_item.xml 
+2023-08-02 04:52:42,746 30146 INFO elite_emr_16 odoo.modules.loading: Module acs_hms_surgery: loading demo 
+2023-08-02 04:52:42,746 30146 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_surgery/demo/hms_demo.xml 
+2023-08-02 04:52:42,946 30146 INFO elite_emr_16 odoo.modules.loading: Module acs_hms_surgery loaded in 1.86s, 604 queries (+604 other) 
+2023-08-02 04:52:42,946 30146 INFO elite_emr_16 odoo.modules.loading: Loading module acs_hms_hospitalization (46/47) 
+2023-08-02 04:52:42,965 30146 WARNING elite_emr_16 odoo.api.create: The model odoo.addons.acs_hms_hospitalization.models.death_register is not overriding the create method in batch 
+2023-08-02 04:52:42,969 30146 WARNING elite_emr_16 odoo.api.create: The model odoo.addons.acs_hms_hospitalization.models.hospitalization is not overriding the create method in batch 
+2023-08-02 04:52:43,047 30146 WARNING elite_emr_16 odoo.fields: patient.death.register.patient_sex: selection attribute will be ignored as the field is related 
+2023-08-02 04:52:43,048 30146 WARNING elite_emr_16 odoo.fields: patient.accomodation.history.invoice_policy: selection attribute will be ignored as the field is related 
+2023-08-02 04:52:43,057 30146 WARNING elite_emr_16 odoo.fields: Field hr.employee.public.birthday: unknown parameter 'tracking', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:52:43,073 30146 WARNING elite_emr_16 odoo.fields: Field hms.patient.disease.disease_severity: unknown parameter 'sort', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:52:43,073 30146 WARNING elite_emr_16 odoo.fields: Field hms.patient.disease.status: unknown parameter 'sort', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:52:43,073 30146 WARNING elite_emr_16 odoo.fields: Field hms.patient.disease.allergy_type: unknown parameter 'sort', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:52:43,074 30146 WARNING elite_emr_16 odoo.fields: Field hms.treatment.disease_severity: unknown parameter 'sort', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:52:43,074 30146 WARNING elite_emr_16 odoo.fields: Redundant default on patient.death.register.patient_sex 
+2023-08-02 04:52:43,105 30146 INFO elite_emr_16 odoo.modules.registry: module acs_hms_hospitalization: creating or updating database tables 
+2023-08-02 04:52:52,385 30146 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_hospitalization/security/ir.model.access.csv 
+2023-08-02 04:52:52,693 30146 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_hospitalization/security/security.xml 
+2023-08-02 04:52:53,087 30146 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_hospitalization/wizard/transfer_accomodation_view.xml 
+2023-08-02 04:52:53,281 30146 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_hospitalization/views/hospitalization_view.xml 
+2023-08-02 04:52:54,333 30146 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_hospitalization/views/hospitalization_care_views.xml 
+2023-08-02 04:52:54,924 30146 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_hospitalization/views/bed_view.xml 
+2023-08-02 04:52:57,210 30146 WARNING elite_emr_16 odoo.addons.base.models.ir_ui_view: A <span> with fa class (fa fa-bed fa-4x) must have title in its tag, parents, descendants or have text
+View error context:
+{'file': '/Users/georgeohia/Projects/odooproj/skin101/acs_hms_hospitalization/views/bed_view.xml',
+ 'line': 14,
+ 'name': 'bed.kanban',
+ 'view': ir.ui.view(1629,),
+ 'view.model': 'hospital.bed',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': 'bed_kanban_view'} 
+2023-08-02 04:52:57,238 30146 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_hospitalization/views/ward_view.xml 
+2023-08-02 04:52:57,613 30146 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_hospitalization/views/building_view.xml 
+2023-08-02 04:52:58,133 30146 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_hospitalization/views/ot_view.xml 
+2023-08-02 04:52:58,227 30146 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_hospitalization/views/hms_base_view.xml 
+2023-08-02 04:52:58,885 30146 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_hospitalization/views/death_register.xml 
+2023-08-02 04:52:59,149 30146 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_hospitalization/views/res_config_settings_views.xml 
+2023-08-02 04:52:59,581 30146 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_hospitalization/report/report_hospital_discharge.xml 
+2023-08-02 04:52:59,706 30146 WARNING elite_emr_16 py.warnings: /Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py:299: DeprecationWarning: The <report> tag is deprecated, use a <record> tag for 'report_hospitalization_discharge'.
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 937, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 980, in _bootstrap_inner
+    self.run()
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 917, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Users/georgeohia/Projects/odooproj/skin101/env/lib/python3.9/site-packages/werkzeug/serving.py", line 329, in handle
+    rv = BaseHTTPRequestHandler.handle(self)
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/server.py", line 432, in handle
+    self.handle_one_request()
+  File "/Users/georgeohia/Projects/odooproj/skin101/env/lib/python3.9/site-packages/werkzeug/serving.py", line 364, in handle_one_request
+    return self.run_wsgi()
+  File "/Users/georgeohia/Projects/odooproj/skin101/env/lib/python3.9/site-packages/werkzeug/serving.py", line 306, in run_wsgi
+    execute(self.server.app)
+  File "/Users/georgeohia/Projects/odooproj/skin101/env/lib/python3.9/site-packages/werkzeug/serving.py", line 294, in execute
+    application_iter = app(environ, start_response)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1991, in __call__
+    response = request._serve_db()
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1587, in _serve_db
+    return service_model.retrying(self._serve_ir_http, self.env)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/service/model.py", line 134, in retrying
+    result = func()
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1614, in _serve_ir_http
+    response = self.dispatcher.dispatch(rule.endpoint, args)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1811, in dispatch
+    result = self.request.registry['ir.http']._dispatch(endpoint)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_http.py", line 154, in _dispatch
+    result = endpoint(**request.params)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 700, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/addons/web/controllers/dataset.py", line 46, in call_button
+    action = self._call_kw(model, method, args, kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/addons/web/controllers/dataset.py", line 33, in _call_kw
+    return call_kw(request.env[model], method, args, kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/api.py", line 461, in call_kw
+    result = _call_kw_multi(method, model, args, kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/api.py", line 448, in _call_kw_multi
+    result = method(recs, *args, **kwargs)
+  File "<decorator-gen-74>", line 2, in button_immediate_install
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_module.py", line 76, in check_and_log
+    return method(self, *args, **kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_module.py", line 491, in button_immediate_install
+    return self._button_immediate_function(type(self).button_install)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_module.py", line 615, in _button_immediate_function
+    registry = modules.registry.Registry.new(self._cr.dbname, update_module=True)
+  File "<decorator-gen-14>", line 2, in new
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/registry.py", line 90, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 487, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 371, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 230, in load_module_graph
+    load_data(cr, idref, mode, kind='data', package=package)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 71, in load_data
+    tools.convert_file(cr, package.name, filename, idref, mode, noupdate, kind)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 763, in convert_file
+    convert_xml_import(cr, module, fp, idref, mode, noupdate)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 829, in convert_xml_import
+    obj.parse(doc.getroot())
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 749, in parse
+    self._tag_root(de)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 698, in _tag_root
+    f(rec)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 299, in _tag_report
+    warnings.warn(f"The <report> tag is deprecated, use a <record> tag for {xml_id!r}.", DeprecationWarning)
+ 
+2023-08-02 04:52:59,766 30146 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_hospitalization/report/report_visiting_pass.xml 
+2023-08-02 04:52:59,875 30146 WARNING elite_emr_16 py.warnings: /Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py:299: DeprecationWarning: The <report> tag is deprecated, use a <record> tag for 'report_attendance_pass_id'.
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 937, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 980, in _bootstrap_inner
+    self.run()
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 917, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Users/georgeohia/Projects/odooproj/skin101/env/lib/python3.9/site-packages/werkzeug/serving.py", line 329, in handle
+    rv = BaseHTTPRequestHandler.handle(self)
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/server.py", line 432, in handle
+    self.handle_one_request()
+  File "/Users/georgeohia/Projects/odooproj/skin101/env/lib/python3.9/site-packages/werkzeug/serving.py", line 364, in handle_one_request
+    return self.run_wsgi()
+  File "/Users/georgeohia/Projects/odooproj/skin101/env/lib/python3.9/site-packages/werkzeug/serving.py", line 306, in run_wsgi
+    execute(self.server.app)
+  File "/Users/georgeohia/Projects/odooproj/skin101/env/lib/python3.9/site-packages/werkzeug/serving.py", line 294, in execute
+    application_iter = app(environ, start_response)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1991, in __call__
+    response = request._serve_db()
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1587, in _serve_db
+    return service_model.retrying(self._serve_ir_http, self.env)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/service/model.py", line 134, in retrying
+    result = func()
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1614, in _serve_ir_http
+    response = self.dispatcher.dispatch(rule.endpoint, args)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1811, in dispatch
+    result = self.request.registry['ir.http']._dispatch(endpoint)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_http.py", line 154, in _dispatch
+    result = endpoint(**request.params)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 700, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/addons/web/controllers/dataset.py", line 46, in call_button
+    action = self._call_kw(model, method, args, kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/addons/web/controllers/dataset.py", line 33, in _call_kw
+    return call_kw(request.env[model], method, args, kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/api.py", line 461, in call_kw
+    result = _call_kw_multi(method, model, args, kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/api.py", line 448, in _call_kw_multi
+    result = method(recs, *args, **kwargs)
+  File "<decorator-gen-74>", line 2, in button_immediate_install
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_module.py", line 76, in check_and_log
+    return method(self, *args, **kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_module.py", line 491, in button_immediate_install
+    return self._button_immediate_function(type(self).button_install)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_module.py", line 615, in _button_immediate_function
+    registry = modules.registry.Registry.new(self._cr.dbname, update_module=True)
+  File "<decorator-gen-14>", line 2, in new
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/registry.py", line 90, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 487, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 371, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 230, in load_module_graph
+    load_data(cr, idref, mode, kind='data', package=package)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 71, in load_data
+    tools.convert_file(cr, package.name, filename, idref, mode, noupdate, kind)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 763, in convert_file
+    convert_xml_import(cr, module, fp, idref, mode, noupdate)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 829, in convert_xml_import
+    obj.parse(doc.getroot())
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 749, in parse
+    self._tag_root(de)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 698, in _tag_root
+    f(rec)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 299, in _tag_report
+    warnings.warn(f"The <report> tag is deprecated, use a <record> tag for {xml_id!r}.", DeprecationWarning)
+ 
+2023-08-02 04:52:59,968 30146 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_hospitalization/report/report_hospitalization_patient_card.xml 
+2023-08-02 04:53:00,050 30146 WARNING elite_emr_16 py.warnings: /Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py:299: DeprecationWarning: The <report> tag is deprecated, use a <record> tag for 'dish_report_card'.
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 937, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 980, in _bootstrap_inner
+    self.run()
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 917, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Users/georgeohia/Projects/odooproj/skin101/env/lib/python3.9/site-packages/werkzeug/serving.py", line 329, in handle
+    rv = BaseHTTPRequestHandler.handle(self)
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/server.py", line 432, in handle
+    self.handle_one_request()
+  File "/Users/georgeohia/Projects/odooproj/skin101/env/lib/python3.9/site-packages/werkzeug/serving.py", line 364, in handle_one_request
+    return self.run_wsgi()
+  File "/Users/georgeohia/Projects/odooproj/skin101/env/lib/python3.9/site-packages/werkzeug/serving.py", line 306, in run_wsgi
+    execute(self.server.app)
+  File "/Users/georgeohia/Projects/odooproj/skin101/env/lib/python3.9/site-packages/werkzeug/serving.py", line 294, in execute
+    application_iter = app(environ, start_response)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1991, in __call__
+    response = request._serve_db()
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1587, in _serve_db
+    return service_model.retrying(self._serve_ir_http, self.env)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/service/model.py", line 134, in retrying
+    result = func()
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1614, in _serve_ir_http
+    response = self.dispatcher.dispatch(rule.endpoint, args)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1811, in dispatch
+    result = self.request.registry['ir.http']._dispatch(endpoint)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_http.py", line 154, in _dispatch
+    result = endpoint(**request.params)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 700, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/addons/web/controllers/dataset.py", line 46, in call_button
+    action = self._call_kw(model, method, args, kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/addons/web/controllers/dataset.py", line 33, in _call_kw
+    return call_kw(request.env[model], method, args, kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/api.py", line 461, in call_kw
+    result = _call_kw_multi(method, model, args, kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/api.py", line 448, in _call_kw_multi
+    result = method(recs, *args, **kwargs)
+  File "<decorator-gen-74>", line 2, in button_immediate_install
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_module.py", line 76, in check_and_log
+    return method(self, *args, **kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_module.py", line 491, in button_immediate_install
+    return self._button_immediate_function(type(self).button_install)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_module.py", line 615, in _button_immediate_function
+    registry = modules.registry.Registry.new(self._cr.dbname, update_module=True)
+  File "<decorator-gen-14>", line 2, in new
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/registry.py", line 90, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 487, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 371, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 230, in load_module_graph
+    load_data(cr, idref, mode, kind='data', package=package)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 71, in load_data
+    tools.convert_file(cr, package.name, filename, idref, mode, noupdate, kind)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 763, in convert_file
+    convert_xml_import(cr, module, fp, idref, mode, noupdate)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 829, in convert_xml_import
+    obj.parse(doc.getroot())
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 749, in parse
+    self._tag_root(de)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 698, in _tag_root
+    f(rec)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 299, in _tag_report
+    warnings.warn(f"The <report> tag is deprecated, use a <record> tag for {xml_id!r}.", DeprecationWarning)
+ 
+2023-08-02 04:53:00,147 30146 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_hospitalization/report/ward_patient_list_report.xml 
+2023-08-02 04:53:00,229 30146 WARNING elite_emr_16 py.warnings: /Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py:299: DeprecationWarning: The <report> tag is deprecated, use a <record> tag for 'workorder_report'.
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 937, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 980, in _bootstrap_inner
+    self.run()
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 917, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Users/georgeohia/Projects/odooproj/skin101/env/lib/python3.9/site-packages/werkzeug/serving.py", line 329, in handle
+    rv = BaseHTTPRequestHandler.handle(self)
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/server.py", line 432, in handle
+    self.handle_one_request()
+  File "/Users/georgeohia/Projects/odooproj/skin101/env/lib/python3.9/site-packages/werkzeug/serving.py", line 364, in handle_one_request
+    return self.run_wsgi()
+  File "/Users/georgeohia/Projects/odooproj/skin101/env/lib/python3.9/site-packages/werkzeug/serving.py", line 306, in run_wsgi
+    execute(self.server.app)
+  File "/Users/georgeohia/Projects/odooproj/skin101/env/lib/python3.9/site-packages/werkzeug/serving.py", line 294, in execute
+    application_iter = app(environ, start_response)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1991, in __call__
+    response = request._serve_db()
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1587, in _serve_db
+    return service_model.retrying(self._serve_ir_http, self.env)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/service/model.py", line 134, in retrying
+    result = func()
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1614, in _serve_ir_http
+    response = self.dispatcher.dispatch(rule.endpoint, args)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1811, in dispatch
+    result = self.request.registry['ir.http']._dispatch(endpoint)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_http.py", line 154, in _dispatch
+    result = endpoint(**request.params)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 700, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/addons/web/controllers/dataset.py", line 46, in call_button
+    action = self._call_kw(model, method, args, kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/addons/web/controllers/dataset.py", line 33, in _call_kw
+    return call_kw(request.env[model], method, args, kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/api.py", line 461, in call_kw
+    result = _call_kw_multi(method, model, args, kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/api.py", line 448, in _call_kw_multi
+    result = method(recs, *args, **kwargs)
+  File "<decorator-gen-74>", line 2, in button_immediate_install
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_module.py", line 76, in check_and_log
+    return method(self, *args, **kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_module.py", line 491, in button_immediate_install
+    return self._button_immediate_function(type(self).button_install)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_module.py", line 615, in _button_immediate_function
+    registry = modules.registry.Registry.new(self._cr.dbname, update_module=True)
+  File "<decorator-gen-14>", line 2, in new
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/registry.py", line 90, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 487, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 371, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 230, in load_module_graph
+    load_data(cr, idref, mode, kind='data', package=package)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 71, in load_data
+    tools.convert_file(cr, package.name, filename, idref, mode, noupdate, kind)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 763, in convert_file
+    convert_xml_import(cr, module, fp, idref, mode, noupdate)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 829, in convert_xml_import
+    obj.parse(doc.getroot())
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 749, in parse
+    self._tag_root(de)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 698, in _tag_root
+    f(rec)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 299, in _tag_report
+    warnings.warn(f"The <report> tag is deprecated, use a <record> tag for {xml_id!r}.", DeprecationWarning)
+ 
+2023-08-02 04:53:00,268 30146 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_hospitalization/data/sequence.xml 
+2023-08-02 04:53:00,358 30146 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_hospitalization/data/hms_data.xml 
+2023-08-02 04:53:00,595 30146 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_hospitalization/views/menu_item.xml 
+2023-08-02 04:53:02,061 30146 INFO elite_emr_16 odoo.modules.loading: Module acs_hms_hospitalization loaded in 19.11s, 1235 queries (+1235 other) 
+2023-08-02 04:53:02,062 30146 INFO elite_emr_16 odoo.modules.loading: Loading module acs_hms_laboratory (47/47) 
+2023-08-02 04:53:02,110 30146 WARNING elite_emr_16 odoo.api.create: The model odoo.addons.acs_hms_laboratory.models.laboratory is not overriding the create method in batch 
+2023-08-02 04:53:02,676 30146 WARNING elite_emr_16 odoo.fields: patient.death.register.patient_sex: selection attribute will be ignored as the field is related 
+2023-08-02 04:53:02,682 30146 WARNING elite_emr_16 odoo.fields: patient.accomodation.history.invoice_policy: selection attribute will be ignored as the field is related 
+2023-08-02 04:53:02,724 30146 WARNING elite_emr_16 odoo.fields: Field hr.employee.public.birthday: unknown parameter 'tracking', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:53:02,853 30146 WARNING elite_emr_16 odoo.fields: Field hms.patient.disease.disease_severity: unknown parameter 'sort', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:53:02,854 30146 WARNING elite_emr_16 odoo.fields: Field hms.patient.disease.status: unknown parameter 'sort', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:53:02,854 30146 WARNING elite_emr_16 odoo.fields: Field hms.patient.disease.allergy_type: unknown parameter 'sort', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:53:02,863 30146 WARNING elite_emr_16 odoo.fields: Field hms.treatment.disease_severity: unknown parameter 'sort', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:53:02,868 30146 WARNING elite_emr_16 odoo.fields: Redundant default on patient.death.register.patient_sex 
+2023-08-02 04:53:03,014 30146 INFO elite_emr_16 odoo.modules.registry: module acs_hms_laboratory: creating or updating database tables 
+2023-08-02 04:53:08,318 30146 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_laboratory/security/security.xml 
+2023-08-02 04:53:09,471 30146 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_laboratory/security/ir.model.access.csv 
+2023-08-02 04:53:09,875 30146 ERROR elite_emr_16 odoo.sql_db: bad query: 
+            INSERT INTO ir_model_data (module, name, model, res_id, noupdate)
+            VALUES ('acs_hms_laboratory', 'access_hms_acs_lab_test_user', 'ir.model.access', 2044, false), ('acs_hms_laboratory', 'access_patient_laboratory_test_user', 'ir.model.access', 2045, false), ('acs_hms_laboratory', 'access_hms_lab_test_critearea_user', 'ir.model.access', 2046, false), ('acs_hms_laboratory', 'access_hms_laboratory_request_line_user', 'ir.model.access', 2047, false), ('acs_hms_laboratory', 'access_hms_acs_laboratory_request_user', 'ir.model.access', 2048, false), ('acs_hms_laboratory', 'access_hms_laboratory_request_line_receptionist', 'ir.model.access', 2049, false), ('acs_hms_laboratory', 'access_hms_acs_laboratory_request_receptionist', 'ir.model.access', 2050, false), ('acs_hms_laboratory', 'access_patient_laboratory_test_jr_doctor', 'ir.model.access', 2051, false), ('acs_hms_laboratory', 'access_hms_patient_laboratory_test_jr_doctor', 'ir.model.access', 2052, false), ('acs_hms_laboratory', 'access_hms_lab_test_critearea_jr_doctor', 'ir.model.access', 2053, false), ('acs_hms_laboratory', 'access_hms_laboratory_request_line_jr_doctor', 'ir.model.access', 2054, false), ('acs_hms_laboratory', 'access_hms_acs_laboratory_request_jr_doctor', 'ir.model.access', 2055, false), ('acs_hms_laboratory', 'access_patient_laboratory_test_lab_user', 'ir.model.access', 2056, false), ('acs_hms_laboratory', 'access_hms_patient_laboratory_test_lab_user', 'ir.model.access', 2057, false), ('acs_hms_laboratory', 'access_hms_lab_test_critearea_lab_user', 'ir.model.access', 2058, false), ('acs_hms_laboratory', 'access_hms_laboratory_request_line_lab_user', 'ir.model.access', 2059, false), ('acs_hms_laboratory', 'access_hms_acs_laboratory_request_lab_user', 'ir.model.access', 2060, false), ('acs_hms_laboratory', 'access_hms_acs_lab_test_lab_manager', 'ir.model.access', 2061, false), ('acs_hms_laboratory', 'access_patient_laboratory_test_lab_manager', 'ir.model.access', 2062, false), ('acs_hms_laboratory', 'access_hms_patient_laboratory_test_lab_manager', 'ir.model.access', 2063, false), ('acs_hms_laboratory', 'access_hms_acs_laboratory_request_lab_manager', 'ir.model.access', 2064, false), ('acs_hms_laboratory', 'access_hms_acs_lab_test_lab_manager', 'ir.model.access', 2065, false), ('acs_hms_laboratory', 'access_hms_acs_lab_test_manager', 'ir.model.access', 2066, false), ('acs_hms_laboratory', 'access_patient_laboratory_test_manager', 'ir.model.access', 2067, false), ('acs_hms_laboratory', 'access_hms_patient_laboratory_test_manager', 'ir.model.access', 2068, false), ('acs_hms_laboratory', 'access_hms_acs_laboratory_request_manager', 'ir.model.access', 2069, false)
+            ON CONFLICT (module, name)
+            DO UPDATE SET (model, res_id, write_date) =
+                (EXCLUDED.model, EXCLUDED.res_id, now() at time zone 'UTC')
+                
+        
+ERROR: ON CONFLICT DO UPDATE command cannot affect row a second time
+HINT:  Ensure that no rows proposed for insertion within the same command have duplicate constrained values.
+ 
+2023-08-02 04:53:09,877 30146 ERROR elite_emr_16 odoo.addons.base.models.ir_model: Failed to insert ir_model_data
+('acs_hms_laboratory', 'access_hms_acs_lab_test_user', 'ir.model.access', 2044, False)
+('acs_hms_laboratory', 'access_patient_laboratory_test_user', 'ir.model.access', 2045, False)
+('acs_hms_laboratory', 'access_hms_lab_test_critearea_user', 'ir.model.access', 2046, False)
+('acs_hms_laboratory', 'access_hms_laboratory_request_line_user', 'ir.model.access', 2047, False)
+('acs_hms_laboratory', 'access_hms_acs_laboratory_request_user', 'ir.model.access', 2048, False)
+('acs_hms_laboratory', 'access_hms_laboratory_request_line_receptionist', 'ir.model.access', 2049, False)
+('acs_hms_laboratory', 'access_hms_acs_laboratory_request_receptionist', 'ir.model.access', 2050, False)
+('acs_hms_laboratory', 'access_patient_laboratory_test_jr_doctor', 'ir.model.access', 2051, False)
+('acs_hms_laboratory', 'access_hms_patient_laboratory_test_jr_doctor', 'ir.model.access', 2052, False)
+('acs_hms_laboratory', 'access_hms_lab_test_critearea_jr_doctor', 'ir.model.access', 2053, False)
+('acs_hms_laboratory', 'access_hms_laboratory_request_line_jr_doctor', 'ir.model.access', 2054, False)
+('acs_hms_laboratory', 'access_hms_acs_laboratory_request_jr_doctor', 'ir.model.access', 2055, False)
+('acs_hms_laboratory', 'access_patient_laboratory_test_lab_user', 'ir.model.access', 2056, False)
+('acs_hms_laboratory', 'access_hms_patient_laboratory_test_lab_user', 'ir.model.access', 2057, False)
+('acs_hms_laboratory', 'access_hms_lab_test_critearea_lab_user', 'ir.model.access', 2058, False)
+('acs_hms_laboratory', 'access_hms_laboratory_request_line_lab_user', 'ir.model.access', 2059, False)
+('acs_hms_laboratory', 'access_hms_acs_laboratory_request_lab_user', 'ir.model.access', 2060, False)
+('acs_hms_laboratory', 'access_hms_acs_lab_test_lab_manager', 'ir.model.access', 2061, False)
+('acs_hms_laboratory', 'access_patient_laboratory_test_lab_manager', 'ir.model.access', 2062, False)
+('acs_hms_laboratory', 'access_hms_patient_laboratory_test_lab_manager', 'ir.model.access', 2063, False)
+('acs_hms_laboratory', 'access_hms_acs_laboratory_request_lab_manager', 'ir.model.access', 2064, False)
+('acs_hms_laboratory', 'access_hms_acs_lab_test_lab_manager', 'ir.model.access', 2065, False)
+('acs_hms_laboratory', 'access_hms_acs_lab_test_manager', 'ir.model.access', 2066, False)
+('acs_hms_laboratory', 'access_patient_laboratory_test_manager', 'ir.model.access', 2067, False)
+('acs_hms_laboratory', 'access_hms_patient_laboratory_test_manager', 'ir.model.access', 2068, False)
+('acs_hms_laboratory', 'access_hms_acs_laboratory_request_manager', 'ir.model.access', 2069, False) 
+2023-08-02 04:53:10,846 30146 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_laboratory/data/laboratory_data.xml 
+2023-08-02 04:53:11,048 30146 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_laboratory/views/laboratory_request.xml 
+2023-08-02 04:53:11,412 30146 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_laboratory/views/laboratory_view.xml 
+2023-08-02 04:53:11,500 30146 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_laboratory/views/laboratory_test_view.xml 
+2023-08-02 04:53:11,767 30146 WARNING elite_emr_16 odoo.modules.loading: Transient module states were reset 
+2023-08-02 04:53:11,768 30146 ERROR elite_emr_16 odoo.modules.registry: Failed to load registry 
+2023-08-02 04:53:11,814 30146 ERROR elite_emr_16 odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1991, in __call__
+    response = request._serve_db()
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1587, in _serve_db
+    return service_model.retrying(self._serve_ir_http, self.env)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/service/model.py", line 134, in retrying
+    result = func()
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1614, in _serve_ir_http
+    response = self.dispatcher.dispatch(rule.endpoint, args)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1811, in dispatch
+    result = self.request.registry['ir.http']._dispatch(endpoint)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_http.py", line 154, in _dispatch
+    result = endpoint(**request.params)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 700, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/addons/web/controllers/dataset.py", line 46, in call_button
+    action = self._call_kw(model, method, args, kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/addons/web/controllers/dataset.py", line 33, in _call_kw
+    return call_kw(request.env[model], method, args, kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/api.py", line 461, in call_kw
+    result = _call_kw_multi(method, model, args, kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/api.py", line 448, in _call_kw_multi
+    result = method(recs, *args, **kwargs)
+  File "<decorator-gen-74>", line 2, in button_immediate_install
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_module.py", line 76, in check_and_log
+    return method(self, *args, **kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_module.py", line 491, in button_immediate_install
+    return self._button_immediate_function(type(self).button_install)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_module.py", line 615, in _button_immediate_function
+    registry = modules.registry.Registry.new(self._cr.dbname, update_module=True)
+  File "<decorator-gen-14>", line 2, in new
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/registry.py", line 90, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 487, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 371, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 230, in load_module_graph
+    load_data(cr, idref, mode, kind='data', package=package)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 71, in load_data
+    tools.convert_file(cr, package.name, filename, idref, mode, noupdate, kind)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 763, in convert_file
+    convert_xml_import(cr, module, fp, idref, mode, noupdate)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 829, in convert_xml_import
+    obj.parse(doc.getroot())
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 749, in parse
+    self._tag_root(de)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 709, in _tag_root
+    raise ParseError(msg) from None  # Restart with "--log-handler odoo.tools.convert:DEBUG" for complete traceback
+odoo.tools.convert.ParseError: while parsing /Users/georgeohia/Projects/odooproj/skin101/acs_hms_laboratory/views/laboratory_test_view.xml:5
+Error while validating view near:
+
+                    <button name="action_done" states="draft" string="Done" type="object" class="oe_highlight"/>
+                    <button name="button_cancel" states="draft" string="Cancel" type="object"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,done"/>
+                </header>
+                <sheet>
+
+button_cancel is not a valid action on patient.laboratory.test
+
+View error context:
+{'file': '/Users/georgeohia/Projects/odooproj/skin101/acs_hms_laboratory/views/laboratory_test_view.xml',
+ 'line': 5,
+ 'name': 'Laboratory Test',
+ 'view': ir.ui.view(1664,),
+ 'view.model': 'patient.laboratory.test',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': 'patient_laboratory_test_view'}
+
+2023-08-02 04:53:11,823 30146 INFO elite_emr_16 werkzeug: 127.0.0.1 - - [02/Aug/2023 04:53:11] "POST /web/dataset/call_button HTTP/1.1" 200 - 3653 24.553 7.258
+2023-08-02 04:53:30,984 30146 ERROR elite_emr odoo.sql_db: bad query: 
+            SELECT latest_version
+            FROM ir_module_module
+             WHERE name='base'
+        
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2023-08-02 04:53:30,985 30146 WARNING elite_emr odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database elite_emr. 
+2023-08-02 04:54:03,044 30146 INFO elite_emr_16 odoo.modules.loading: loading 1 modules... 
+2023-08-02 04:54:03,169 30146 INFO elite_emr_16 odoo.modules.loading: 1 modules loaded in 0.12s, 0 queries (+0 extra) 
+2023-08-02 04:54:09,213 30146 WARNING elite_emr_16 odoo.modules.graph: module web_responsive: not installable, skipped 
+2023-08-02 04:54:09,647 30146 INFO elite_emr_16 odoo.modules.loading: loading 45 modules... 
+2023-08-02 04:54:10,834 30146 INFO elite_emr_16 odoo.modules.loading: 45 modules loaded in 1.19s, 0 queries (+0 extra) 
+2023-08-02 04:54:13,634 30146 WARNING elite_emr_16 odoo.fields: Field hr.employee.public.birthday: unknown parameter 'tracking', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:54:13,857 30146 WARNING elite_emr_16 odoo.fields: Field hms.patient.disease.disease_severity: unknown parameter 'sort', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:54:13,858 30146 WARNING elite_emr_16 odoo.fields: Field hms.patient.disease.status: unknown parameter 'sort', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:54:13,859 30146 WARNING elite_emr_16 odoo.fields: Field hms.patient.disease.allergy_type: unknown parameter 'sort', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:54:13,862 30146 WARNING elite_emr_16 odoo.fields: Field hms.treatment.disease_severity: unknown parameter 'sort', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:54:14,494 30146 ERROR elite_emr_16 odoo.modules.loading: Some modules are not loaded, some dependencies or manifest may be missing: ['web_responsive'] 
+2023-08-02 04:54:14,497 30146 INFO elite_emr_16 odoo.modules.loading: Modules loaded. 
+2023-08-02 04:54:14,518 30146 INFO elite_emr_16 odoo.modules.registry: Registry loaded in 12.330s 
+2023-08-02 04:54:14,529 30146 INFO elite_emr_16 odoo.addons.base.models.ir_http: Generating routing map for key None 
+2023-08-02 04:54:15,409 30146 INFO elite_emr_16 werkzeug: 127.0.0.1 - - [02/Aug/2023 04:54:15] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 26 7.363 5.864
+2023-08-02 04:54:31,021 30146 INFO elite_emr_16 odoo.addons.base.models.ir_cron: Starting job `payment: post-process transactions`. 
+2023-08-02 04:54:31,031 30146 INFO elite_emr_16 odoo.addons.base.models.ir_cron: Job `payment: post-process transactions` done. 
+2023-08-02 04:54:31,075 30146 ERROR elite_emr odoo.sql_db: bad query: 
+            SELECT latest_version
+            FROM ir_module_module
+             WHERE name='base'
+        
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2023-08-02 04:54:31,075 30146 WARNING elite_emr odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database elite_emr. 
+2023-08-02 04:55:31,084 30146 ERROR elite_emr odoo.sql_db: bad query: 
+            SELECT latest_version
+            FROM ir_module_module
+             WHERE name='base'
+        
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2023-08-02 04:55:31,085 30146 WARNING elite_emr odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database elite_emr. 
+2023-08-02 04:56:02,233 30444 WARNING ? py.warnings: /Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/config.py:565: DeprecationWarning: The longpolling-port is a deprecated alias to the gevent-port option, please use the latter.
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo-bin", line 8, in <module>
+    odoo.cli.main()
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/cli/command.py", line 56, in main
+    o.run(args)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/cli/server.py", line 179, in run
+    main(args)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/cli/server.py", line 127, in main
+    odoo.tools.config.parse_config(args)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/config.py", line 378, in parse_config
+    self._warn_deprecated_options()
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/config.py", line 565, in _warn_deprecated_options
+    warnings.warn(
+ 
+2023-08-02 04:56:02,233 30444 INFO ? odoo: Odoo version 16.0 
+2023-08-02 04:56:02,233 30444 INFO ? odoo: Using configuration file at /Users/georgeohia/Projects/odooproj/skin101/odoo.conf 
+2023-08-02 04:56:02,233 30444 INFO ? odoo: addons paths: ['/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons', '/Users/georgeohia/Library/Application Support/Odoo/addons/16.0', '/Users/georgeohia/Projects/odooproj/odoo16_enterprise', '/Users/georgeohia/Projects/odooproj/odoo16/addons', '/Users/georgeohia/Projects/odooproj/skin101'] 
+2023-08-02 04:56:02,233 30444 INFO ? odoo: database: odoo@default:5432 
+2023-08-02 04:56:02,491 30444 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2023-08-02 04:56:03,360 30444 ERROR ? odoo.modules.loading: Database elite_emr not initialized, you can force it with `-i base` 
+2023-08-02 04:56:03,361 30444 INFO ? odoo.modules.registry: Registry loaded in 0.079s 
+2023-08-02 04:56:03,436 30444 INFO ? odoo.service.server: HTTP service (werkzeug) running on 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa:8016 
+2023-08-02 04:56:05,477 30444 INFO elite_emr_16 odoo.modules.loading: loading 1 modules... 
+2023-08-02 04:56:05,487 30444 INFO elite_emr_16 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2023-08-02 04:56:05,531 30444 WARNING elite_emr_16 odoo.modules.module: Missing `license` key in manifest for 'acs_hms_surgery', defaulting to LGPL-3 
+2023-08-02 04:56:05,535 30444 WARNING elite_emr_16 odoo.modules.graph: module web_responsive: not installable, skipped 
+2023-08-02 04:56:05,537 30444 WARNING elite_emr_16 odoo.modules.module: Missing `license` key in manifest for 'web_timer_widget', defaulting to LGPL-3 
+2023-08-02 04:56:05,559 30444 INFO elite_emr_16 odoo.modules.loading: loading 45 modules... 
+2023-08-02 04:56:06,568 30444 WARNING elite_emr_16 odoo.api.create: The model odoo.addons.acs_hms.models.patient is not overriding the create method in batch 
+2023-08-02 04:56:06,570 30444 WARNING elite_emr_16 odoo.api.create: The model odoo.addons.acs_hms.models.doctor is not overriding the create method in batch 
+2023-08-02 04:56:06,572 30444 WARNING elite_emr_16 odoo.api.create: The model odoo.addons.acs_hms.models.appointment is not overriding the create method in batch 
+2023-08-02 04:56:06,584 30444 WARNING elite_emr_16 odoo.api.create: The model odoo.addons.acs_hms.models.treatment is not overriding the create method in batch 
+2023-08-02 04:56:06,632 30444 WARNING elite_emr_16 odoo.api.create: The model odoo.addons.acs_hms_surgery.models.surgery is not overriding the create method in batch 
+2023-08-02 04:56:06,636 30444 INFO elite_emr_16 odoo.modules.loading: 45 modules loaded in 1.08s, 0 queries (+0 extra) 
+2023-08-02 04:56:06,820 30444 WARNING elite_emr_16 odoo.fields: Field hr.employee.public.birthday: unknown parameter 'tracking', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:56:06,841 30444 WARNING elite_emr_16 odoo.fields: Field hms.patient.disease.disease_severity: unknown parameter 'sort', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:56:06,841 30444 WARNING elite_emr_16 odoo.fields: Field hms.patient.disease.status: unknown parameter 'sort', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:56:06,841 30444 WARNING elite_emr_16 odoo.fields: Field hms.patient.disease.allergy_type: unknown parameter 'sort', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:56:06,842 30444 WARNING elite_emr_16 odoo.fields: Field hms.treatment.disease_severity: unknown parameter 'sort', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:56:06,877 30444 ERROR elite_emr_16 odoo.modules.loading: Some modules are not loaded, some dependencies or manifest may be missing: ['web_responsive'] 
+2023-08-02 04:56:06,878 30444 INFO elite_emr_16 odoo.modules.loading: Modules loaded. 
+2023-08-02 04:56:06,882 30444 INFO elite_emr_16 odoo.modules.registry: Registry loaded in 1.522s 
+2023-08-02 04:56:06,884 30444 INFO elite_emr_16 odoo.addons.base.models.ir_http: Generating routing map for key None 
+2023-08-02 04:56:07,038 30444 INFO elite_emr_16 werkzeug: 127.0.0.1 - - [02/Aug/2023 04:56:07] "GET /websocket HTTP/1.1" 101 - 22 0.029 1.652
+2023-08-02 04:56:07,136 30444 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2023-08-02 04:56:07,544 30444 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'acs_hms_hospitalization', defaulting to LGPL-3 
+2023-08-02 04:56:07,558 30444 INFO elite_emr_16 odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_install on ['Hospital Laboratory Management'] to user admin #2 via 127.0.0.1 
+2023-08-02 04:56:07,558 30444 INFO elite_emr_16 odoo.addons.base.models.ir_module: User #2 triggered module installation 
+2023-08-02 04:56:07,559 30444 INFO elite_emr_16 odoo.addons.base.models.ir_module: ALLOW access to module.button_install on ['Hospital Laboratory Management'] to user admin #2 via 127.0.0.1 
+2023-08-02 04:56:07,654 30444 INFO elite_emr_16 odoo.modules.loading: loading 1 modules... 
+2023-08-02 04:56:07,664 30444 INFO elite_emr_16 odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2023-08-02 04:56:07,686 30444 INFO elite_emr_16 odoo.modules.loading: updating modules list 
+2023-08-02 04:56:07,687 30444 INFO elite_emr_16 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 127.0.0.1 
+2023-08-02 04:56:08,141 30444 WARNING elite_emr_16 odoo.modules.graph: module web_responsive: not installable, skipped 
+2023-08-02 04:56:08,349 30444 INFO elite_emr_16 odoo.modules.loading: loading 45 modules... 
+2023-08-02 04:56:08,483 30444 INFO elite_emr_16 odoo.modules.loading: 45 modules loaded in 0.13s, 0 queries (+0 extra) 
+2023-08-02 04:56:08,492 30444 INFO elite_emr_16 odoo.modules.loading: loading 47 modules... 
+2023-08-02 04:56:08,493 30444 INFO elite_emr_16 odoo.modules.loading: Loading module acs_hms_hospitalization (46/47) 
+2023-08-02 04:56:08,509 30444 WARNING elite_emr_16 odoo.api.create: The model odoo.addons.acs_hms_hospitalization.models.death_register is not overriding the create method in batch 
+2023-08-02 04:56:08,514 30444 WARNING elite_emr_16 odoo.api.create: The model odoo.addons.acs_hms_hospitalization.models.hospitalization is not overriding the create method in batch 
+2023-08-02 04:56:08,718 30444 WARNING elite_emr_16 odoo.fields: patient.death.register.patient_sex: selection attribute will be ignored as the field is related 
+2023-08-02 04:56:08,719 30444 WARNING elite_emr_16 odoo.fields: patient.accomodation.history.invoice_policy: selection attribute will be ignored as the field is related 
+2023-08-02 04:56:08,729 30444 WARNING elite_emr_16 odoo.fields: Field hr.employee.public.birthday: unknown parameter 'tracking', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:56:08,747 30444 WARNING elite_emr_16 odoo.fields: Field hms.patient.disease.disease_severity: unknown parameter 'sort', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:56:08,747 30444 WARNING elite_emr_16 odoo.fields: Field hms.patient.disease.status: unknown parameter 'sort', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:56:08,748 30444 WARNING elite_emr_16 odoo.fields: Field hms.patient.disease.allergy_type: unknown parameter 'sort', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:56:08,748 30444 WARNING elite_emr_16 odoo.fields: Field hms.treatment.disease_severity: unknown parameter 'sort', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:56:08,749 30444 WARNING elite_emr_16 odoo.fields: Redundant default on patient.death.register.patient_sex 
+2023-08-02 04:56:08,789 30444 INFO elite_emr_16 odoo.modules.registry: module acs_hms_hospitalization: creating or updating database tables 
+2023-08-02 04:56:09,329 30444 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_hospitalization/security/ir.model.access.csv 
+2023-08-02 04:56:09,482 30444 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_hospitalization/security/security.xml 
+2023-08-02 04:56:09,526 30444 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_hospitalization/wizard/transfer_accomodation_view.xml 
+2023-08-02 04:56:09,882 30444 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_hospitalization/views/hospitalization_view.xml 
+2023-08-02 04:56:10,057 30444 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_hospitalization/views/hospitalization_care_views.xml 
+2023-08-02 04:56:10,101 30444 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_hospitalization/views/bed_view.xml 
+2023-08-02 04:56:10,185 30444 WARNING elite_emr_16 odoo.addons.base.models.ir_ui_view: A <span> with fa class (fa fa-bed fa-4x) must have title in its tag, parents, descendants or have text
+View error context:
+{'file': '/Users/georgeohia/Projects/odooproj/skin101/acs_hms_hospitalization/views/bed_view.xml',
+ 'line': 14,
+ 'name': 'bed.kanban',
+ 'view': ir.ui.view(1629,),
+ 'view.model': 'hospital.bed',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': 'bed_kanban_view'} 
+2023-08-02 04:56:10,214 30444 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_hospitalization/views/ward_view.xml 
+2023-08-02 04:56:10,249 30444 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_hospitalization/views/building_view.xml 
+2023-08-02 04:56:10,295 30444 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_hospitalization/views/ot_view.xml 
+2023-08-02 04:56:10,330 30444 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_hospitalization/views/hms_base_view.xml 
+2023-08-02 04:56:10,549 30444 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_hospitalization/views/death_register.xml 
+2023-08-02 04:56:10,593 30444 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_hospitalization/views/res_config_settings_views.xml 
+2023-08-02 04:56:10,855 30444 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_hospitalization/report/report_hospital_discharge.xml 
+2023-08-02 04:56:10,906 30444 WARNING elite_emr_16 py.warnings: /Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py:299: DeprecationWarning: The <report> tag is deprecated, use a <record> tag for 'report_hospitalization_discharge'.
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 937, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 980, in _bootstrap_inner
+    self.run()
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 917, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Users/georgeohia/Projects/odooproj/skin101/env/lib/python3.9/site-packages/werkzeug/serving.py", line 329, in handle
+    rv = BaseHTTPRequestHandler.handle(self)
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/server.py", line 432, in handle
+    self.handle_one_request()
+  File "/Users/georgeohia/Projects/odooproj/skin101/env/lib/python3.9/site-packages/werkzeug/serving.py", line 364, in handle_one_request
+    return self.run_wsgi()
+  File "/Users/georgeohia/Projects/odooproj/skin101/env/lib/python3.9/site-packages/werkzeug/serving.py", line 306, in run_wsgi
+    execute(self.server.app)
+  File "/Users/georgeohia/Projects/odooproj/skin101/env/lib/python3.9/site-packages/werkzeug/serving.py", line 294, in execute
+    application_iter = app(environ, start_response)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1991, in __call__
+    response = request._serve_db()
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1587, in _serve_db
+    return service_model.retrying(self._serve_ir_http, self.env)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/service/model.py", line 134, in retrying
+    result = func()
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1614, in _serve_ir_http
+    response = self.dispatcher.dispatch(rule.endpoint, args)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1811, in dispatch
+    result = self.request.registry['ir.http']._dispatch(endpoint)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_http.py", line 154, in _dispatch
+    result = endpoint(**request.params)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 700, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/addons/web/controllers/dataset.py", line 46, in call_button
+    action = self._call_kw(model, method, args, kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/addons/web/controllers/dataset.py", line 33, in _call_kw
+    return call_kw(request.env[model], method, args, kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/api.py", line 461, in call_kw
+    result = _call_kw_multi(method, model, args, kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/api.py", line 448, in _call_kw_multi
+    result = method(recs, *args, **kwargs)
+  File "<decorator-gen-74>", line 2, in button_immediate_install
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_module.py", line 76, in check_and_log
+    return method(self, *args, **kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_module.py", line 491, in button_immediate_install
+    return self._button_immediate_function(type(self).button_install)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_module.py", line 615, in _button_immediate_function
+    registry = modules.registry.Registry.new(self._cr.dbname, update_module=True)
+  File "<decorator-gen-14>", line 2, in new
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/registry.py", line 90, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 487, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 371, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 230, in load_module_graph
+    load_data(cr, idref, mode, kind='data', package=package)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 71, in load_data
+    tools.convert_file(cr, package.name, filename, idref, mode, noupdate, kind)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 763, in convert_file
+    convert_xml_import(cr, module, fp, idref, mode, noupdate)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 829, in convert_xml_import
+    obj.parse(doc.getroot())
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 749, in parse
+    self._tag_root(de)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 698, in _tag_root
+    f(rec)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 299, in _tag_report
+    warnings.warn(f"The <report> tag is deprecated, use a <record> tag for {xml_id!r}.", DeprecationWarning)
+ 
+2023-08-02 04:56:10,924 30444 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_hospitalization/report/report_visiting_pass.xml 
+2023-08-02 04:56:10,945 30444 WARNING elite_emr_16 py.warnings: /Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py:299: DeprecationWarning: The <report> tag is deprecated, use a <record> tag for 'report_attendance_pass_id'.
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 937, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 980, in _bootstrap_inner
+    self.run()
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 917, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Users/georgeohia/Projects/odooproj/skin101/env/lib/python3.9/site-packages/werkzeug/serving.py", line 329, in handle
+    rv = BaseHTTPRequestHandler.handle(self)
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/server.py", line 432, in handle
+    self.handle_one_request()
+  File "/Users/georgeohia/Projects/odooproj/skin101/env/lib/python3.9/site-packages/werkzeug/serving.py", line 364, in handle_one_request
+    return self.run_wsgi()
+  File "/Users/georgeohia/Projects/odooproj/skin101/env/lib/python3.9/site-packages/werkzeug/serving.py", line 306, in run_wsgi
+    execute(self.server.app)
+  File "/Users/georgeohia/Projects/odooproj/skin101/env/lib/python3.9/site-packages/werkzeug/serving.py", line 294, in execute
+    application_iter = app(environ, start_response)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1991, in __call__
+    response = request._serve_db()
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1587, in _serve_db
+    return service_model.retrying(self._serve_ir_http, self.env)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/service/model.py", line 134, in retrying
+    result = func()
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1614, in _serve_ir_http
+    response = self.dispatcher.dispatch(rule.endpoint, args)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1811, in dispatch
+    result = self.request.registry['ir.http']._dispatch(endpoint)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_http.py", line 154, in _dispatch
+    result = endpoint(**request.params)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 700, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/addons/web/controllers/dataset.py", line 46, in call_button
+    action = self._call_kw(model, method, args, kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/addons/web/controllers/dataset.py", line 33, in _call_kw
+    return call_kw(request.env[model], method, args, kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/api.py", line 461, in call_kw
+    result = _call_kw_multi(method, model, args, kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/api.py", line 448, in _call_kw_multi
+    result = method(recs, *args, **kwargs)
+  File "<decorator-gen-74>", line 2, in button_immediate_install
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_module.py", line 76, in check_and_log
+    return method(self, *args, **kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_module.py", line 491, in button_immediate_install
+    return self._button_immediate_function(type(self).button_install)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_module.py", line 615, in _button_immediate_function
+    registry = modules.registry.Registry.new(self._cr.dbname, update_module=True)
+  File "<decorator-gen-14>", line 2, in new
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/registry.py", line 90, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 487, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 371, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 230, in load_module_graph
+    load_data(cr, idref, mode, kind='data', package=package)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 71, in load_data
+    tools.convert_file(cr, package.name, filename, idref, mode, noupdate, kind)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 763, in convert_file
+    convert_xml_import(cr, module, fp, idref, mode, noupdate)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 829, in convert_xml_import
+    obj.parse(doc.getroot())
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 749, in parse
+    self._tag_root(de)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 698, in _tag_root
+    f(rec)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 299, in _tag_report
+    warnings.warn(f"The <report> tag is deprecated, use a <record> tag for {xml_id!r}.", DeprecationWarning)
+ 
+2023-08-02 04:56:10,948 30444 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_hospitalization/report/report_hospitalization_patient_card.xml 
+2023-08-02 04:56:10,966 30444 WARNING elite_emr_16 py.warnings: /Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py:299: DeprecationWarning: The <report> tag is deprecated, use a <record> tag for 'dish_report_card'.
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 937, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 980, in _bootstrap_inner
+    self.run()
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 917, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Users/georgeohia/Projects/odooproj/skin101/env/lib/python3.9/site-packages/werkzeug/serving.py", line 329, in handle
+    rv = BaseHTTPRequestHandler.handle(self)
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/server.py", line 432, in handle
+    self.handle_one_request()
+  File "/Users/georgeohia/Projects/odooproj/skin101/env/lib/python3.9/site-packages/werkzeug/serving.py", line 364, in handle_one_request
+    return self.run_wsgi()
+  File "/Users/georgeohia/Projects/odooproj/skin101/env/lib/python3.9/site-packages/werkzeug/serving.py", line 306, in run_wsgi
+    execute(self.server.app)
+  File "/Users/georgeohia/Projects/odooproj/skin101/env/lib/python3.9/site-packages/werkzeug/serving.py", line 294, in execute
+    application_iter = app(environ, start_response)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1991, in __call__
+    response = request._serve_db()
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1587, in _serve_db
+    return service_model.retrying(self._serve_ir_http, self.env)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/service/model.py", line 134, in retrying
+    result = func()
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1614, in _serve_ir_http
+    response = self.dispatcher.dispatch(rule.endpoint, args)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1811, in dispatch
+    result = self.request.registry['ir.http']._dispatch(endpoint)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_http.py", line 154, in _dispatch
+    result = endpoint(**request.params)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 700, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/addons/web/controllers/dataset.py", line 46, in call_button
+    action = self._call_kw(model, method, args, kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/addons/web/controllers/dataset.py", line 33, in _call_kw
+    return call_kw(request.env[model], method, args, kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/api.py", line 461, in call_kw
+    result = _call_kw_multi(method, model, args, kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/api.py", line 448, in _call_kw_multi
+    result = method(recs, *args, **kwargs)
+  File "<decorator-gen-74>", line 2, in button_immediate_install
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_module.py", line 76, in check_and_log
+    return method(self, *args, **kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_module.py", line 491, in button_immediate_install
+    return self._button_immediate_function(type(self).button_install)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_module.py", line 615, in _button_immediate_function
+    registry = modules.registry.Registry.new(self._cr.dbname, update_module=True)
+  File "<decorator-gen-14>", line 2, in new
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/registry.py", line 90, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 487, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 371, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 230, in load_module_graph
+    load_data(cr, idref, mode, kind='data', package=package)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 71, in load_data
+    tools.convert_file(cr, package.name, filename, idref, mode, noupdate, kind)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 763, in convert_file
+    convert_xml_import(cr, module, fp, idref, mode, noupdate)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 829, in convert_xml_import
+    obj.parse(doc.getroot())
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 749, in parse
+    self._tag_root(de)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 698, in _tag_root
+    f(rec)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 299, in _tag_report
+    warnings.warn(f"The <report> tag is deprecated, use a <record> tag for {xml_id!r}.", DeprecationWarning)
+ 
+2023-08-02 04:56:10,970 30444 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_hospitalization/report/ward_patient_list_report.xml 
+2023-08-02 04:56:10,994 30444 WARNING elite_emr_16 py.warnings: /Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py:299: DeprecationWarning: The <report> tag is deprecated, use a <record> tag for 'workorder_report'.
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 937, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 980, in _bootstrap_inner
+    self.run()
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 917, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Users/georgeohia/Projects/odooproj/skin101/env/lib/python3.9/site-packages/werkzeug/serving.py", line 329, in handle
+    rv = BaseHTTPRequestHandler.handle(self)
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/server.py", line 432, in handle
+    self.handle_one_request()
+  File "/Users/georgeohia/Projects/odooproj/skin101/env/lib/python3.9/site-packages/werkzeug/serving.py", line 364, in handle_one_request
+    return self.run_wsgi()
+  File "/Users/georgeohia/Projects/odooproj/skin101/env/lib/python3.9/site-packages/werkzeug/serving.py", line 306, in run_wsgi
+    execute(self.server.app)
+  File "/Users/georgeohia/Projects/odooproj/skin101/env/lib/python3.9/site-packages/werkzeug/serving.py", line 294, in execute
+    application_iter = app(environ, start_response)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1991, in __call__
+    response = request._serve_db()
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1587, in _serve_db
+    return service_model.retrying(self._serve_ir_http, self.env)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/service/model.py", line 134, in retrying
+    result = func()
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1614, in _serve_ir_http
+    response = self.dispatcher.dispatch(rule.endpoint, args)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1811, in dispatch
+    result = self.request.registry['ir.http']._dispatch(endpoint)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_http.py", line 154, in _dispatch
+    result = endpoint(**request.params)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 700, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/addons/web/controllers/dataset.py", line 46, in call_button
+    action = self._call_kw(model, method, args, kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/addons/web/controllers/dataset.py", line 33, in _call_kw
+    return call_kw(request.env[model], method, args, kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/api.py", line 461, in call_kw
+    result = _call_kw_multi(method, model, args, kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/api.py", line 448, in _call_kw_multi
+    result = method(recs, *args, **kwargs)
+  File "<decorator-gen-74>", line 2, in button_immediate_install
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_module.py", line 76, in check_and_log
+    return method(self, *args, **kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_module.py", line 491, in button_immediate_install
+    return self._button_immediate_function(type(self).button_install)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_module.py", line 615, in _button_immediate_function
+    registry = modules.registry.Registry.new(self._cr.dbname, update_module=True)
+  File "<decorator-gen-14>", line 2, in new
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/registry.py", line 90, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 487, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 371, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 230, in load_module_graph
+    load_data(cr, idref, mode, kind='data', package=package)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 71, in load_data
+    tools.convert_file(cr, package.name, filename, idref, mode, noupdate, kind)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 763, in convert_file
+    convert_xml_import(cr, module, fp, idref, mode, noupdate)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 829, in convert_xml_import
+    obj.parse(doc.getroot())
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 749, in parse
+    self._tag_root(de)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 698, in _tag_root
+    f(rec)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 299, in _tag_report
+    warnings.warn(f"The <report> tag is deprecated, use a <record> tag for {xml_id!r}.", DeprecationWarning)
+ 
+2023-08-02 04:56:10,998 30444 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_hospitalization/data/sequence.xml 
+2023-08-02 04:56:11,008 30444 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_hospitalization/data/hms_data.xml 
+2023-08-02 04:56:11,060 30444 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_hospitalization/views/menu_item.xml 
+2023-08-02 04:56:11,341 30444 INFO elite_emr_16 odoo.modules.loading: Module acs_hms_hospitalization loaded in 2.85s, 1086 queries (+1086 other) 
+2023-08-02 04:56:11,341 30444 INFO elite_emr_16 odoo.modules.loading: Loading module acs_hms_laboratory (47/47) 
+2023-08-02 04:56:11,351 30444 WARNING elite_emr_16 odoo.api.create: The model odoo.addons.acs_hms_laboratory.models.laboratory is not overriding the create method in batch 
+2023-08-02 04:56:11,444 30444 WARNING elite_emr_16 odoo.fields: patient.death.register.patient_sex: selection attribute will be ignored as the field is related 
+2023-08-02 04:56:11,445 30444 WARNING elite_emr_16 odoo.fields: patient.accomodation.history.invoice_policy: selection attribute will be ignored as the field is related 
+2023-08-02 04:56:11,463 30444 WARNING elite_emr_16 odoo.fields: Field hr.employee.public.birthday: unknown parameter 'tracking', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:56:11,480 30444 WARNING elite_emr_16 odoo.fields: Field hms.patient.disease.disease_severity: unknown parameter 'sort', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:56:11,480 30444 WARNING elite_emr_16 odoo.fields: Field hms.patient.disease.status: unknown parameter 'sort', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:56:11,480 30444 WARNING elite_emr_16 odoo.fields: Field hms.patient.disease.allergy_type: unknown parameter 'sort', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:56:11,480 30444 WARNING elite_emr_16 odoo.fields: Field hms.treatment.disease_severity: unknown parameter 'sort', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:56:11,481 30444 WARNING elite_emr_16 odoo.fields: Redundant default on patient.death.register.patient_sex 
+2023-08-02 04:56:11,523 30444 INFO elite_emr_16 odoo.modules.registry: module acs_hms_laboratory: creating or updating database tables 
+2023-08-02 04:56:12,159 30444 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_laboratory/security/security.xml 
+2023-08-02 04:56:12,362 30444 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_laboratory/security/ir.model.access.csv 
+2023-08-02 04:56:12,392 30444 ERROR elite_emr_16 odoo.sql_db: bad query: 
+            INSERT INTO ir_model_data (module, name, model, res_id, noupdate)
+            VALUES ('acs_hms_laboratory', 'access_hms_acs_lab_test_user', 'ir.model.access', 2095, false), ('acs_hms_laboratory', 'access_patient_laboratory_test_user', 'ir.model.access', 2096, false), ('acs_hms_laboratory', 'access_hms_lab_test_critearea_user', 'ir.model.access', 2097, false), ('acs_hms_laboratory', 'access_hms_laboratory_request_line_user', 'ir.model.access', 2098, false), ('acs_hms_laboratory', 'access_hms_acs_laboratory_request_user', 'ir.model.access', 2099, false), ('acs_hms_laboratory', 'access_hms_laboratory_request_line_receptionist', 'ir.model.access', 2100, false), ('acs_hms_laboratory', 'access_hms_acs_laboratory_request_receptionist', 'ir.model.access', 2101, false), ('acs_hms_laboratory', 'access_patient_laboratory_test_jr_doctor', 'ir.model.access', 2102, false), ('acs_hms_laboratory', 'access_hms_patient_laboratory_test_jr_doctor', 'ir.model.access', 2103, false), ('acs_hms_laboratory', 'access_hms_lab_test_critearea_jr_doctor', 'ir.model.access', 2104, false), ('acs_hms_laboratory', 'access_hms_laboratory_request_line_jr_doctor', 'ir.model.access', 2105, false), ('acs_hms_laboratory', 'access_hms_acs_laboratory_request_jr_doctor', 'ir.model.access', 2106, false), ('acs_hms_laboratory', 'access_patient_laboratory_test_lab_user', 'ir.model.access', 2107, false), ('acs_hms_laboratory', 'access_hms_patient_laboratory_test_lab_user', 'ir.model.access', 2108, false), ('acs_hms_laboratory', 'access_hms_lab_test_critearea_lab_user', 'ir.model.access', 2109, false), ('acs_hms_laboratory', 'access_hms_laboratory_request_line_lab_user', 'ir.model.access', 2110, false), ('acs_hms_laboratory', 'access_hms_acs_laboratory_request_lab_user', 'ir.model.access', 2111, false), ('acs_hms_laboratory', 'access_hms_acs_lab_test_lab_manager', 'ir.model.access', 2112, false), ('acs_hms_laboratory', 'access_patient_laboratory_test_lab_manager', 'ir.model.access', 2113, false), ('acs_hms_laboratory', 'access_hms_patient_laboratory_test_lab_manager', 'ir.model.access', 2114, false), ('acs_hms_laboratory', 'access_hms_acs_laboratory_request_lab_manager', 'ir.model.access', 2115, false), ('acs_hms_laboratory', 'access_hms_acs_lab_test_lab_manager', 'ir.model.access', 2116, false), ('acs_hms_laboratory', 'access_hms_acs_lab_test_manager', 'ir.model.access', 2117, false), ('acs_hms_laboratory', 'access_patient_laboratory_test_manager', 'ir.model.access', 2118, false), ('acs_hms_laboratory', 'access_hms_patient_laboratory_test_manager', 'ir.model.access', 2119, false), ('acs_hms_laboratory', 'access_hms_acs_laboratory_request_manager', 'ir.model.access', 2120, false)
+            ON CONFLICT (module, name)
+            DO UPDATE SET (model, res_id, write_date) =
+                (EXCLUDED.model, EXCLUDED.res_id, now() at time zone 'UTC')
+                
+        
+ERROR: ON CONFLICT DO UPDATE command cannot affect row a second time
+HINT:  Ensure that no rows proposed for insertion within the same command have duplicate constrained values.
+ 
+2023-08-02 04:56:12,392 30444 ERROR elite_emr_16 odoo.addons.base.models.ir_model: Failed to insert ir_model_data
+('acs_hms_laboratory', 'access_hms_acs_lab_test_user', 'ir.model.access', 2095, False)
+('acs_hms_laboratory', 'access_patient_laboratory_test_user', 'ir.model.access', 2096, False)
+('acs_hms_laboratory', 'access_hms_lab_test_critearea_user', 'ir.model.access', 2097, False)
+('acs_hms_laboratory', 'access_hms_laboratory_request_line_user', 'ir.model.access', 2098, False)
+('acs_hms_laboratory', 'access_hms_acs_laboratory_request_user', 'ir.model.access', 2099, False)
+('acs_hms_laboratory', 'access_hms_laboratory_request_line_receptionist', 'ir.model.access', 2100, False)
+('acs_hms_laboratory', 'access_hms_acs_laboratory_request_receptionist', 'ir.model.access', 2101, False)
+('acs_hms_laboratory', 'access_patient_laboratory_test_jr_doctor', 'ir.model.access', 2102, False)
+('acs_hms_laboratory', 'access_hms_patient_laboratory_test_jr_doctor', 'ir.model.access', 2103, False)
+('acs_hms_laboratory', 'access_hms_lab_test_critearea_jr_doctor', 'ir.model.access', 2104, False)
+('acs_hms_laboratory', 'access_hms_laboratory_request_line_jr_doctor', 'ir.model.access', 2105, False)
+('acs_hms_laboratory', 'access_hms_acs_laboratory_request_jr_doctor', 'ir.model.access', 2106, False)
+('acs_hms_laboratory', 'access_patient_laboratory_test_lab_user', 'ir.model.access', 2107, False)
+('acs_hms_laboratory', 'access_hms_patient_laboratory_test_lab_user', 'ir.model.access', 2108, False)
+('acs_hms_laboratory', 'access_hms_lab_test_critearea_lab_user', 'ir.model.access', 2109, False)
+('acs_hms_laboratory', 'access_hms_laboratory_request_line_lab_user', 'ir.model.access', 2110, False)
+('acs_hms_laboratory', 'access_hms_acs_laboratory_request_lab_user', 'ir.model.access', 2111, False)
+('acs_hms_laboratory', 'access_hms_acs_lab_test_lab_manager', 'ir.model.access', 2112, False)
+('acs_hms_laboratory', 'access_patient_laboratory_test_lab_manager', 'ir.model.access', 2113, False)
+('acs_hms_laboratory', 'access_hms_patient_laboratory_test_lab_manager', 'ir.model.access', 2114, False)
+('acs_hms_laboratory', 'access_hms_acs_laboratory_request_lab_manager', 'ir.model.access', 2115, False)
+('acs_hms_laboratory', 'access_hms_acs_lab_test_lab_manager', 'ir.model.access', 2116, False)
+('acs_hms_laboratory', 'access_hms_acs_lab_test_manager', 'ir.model.access', 2117, False)
+('acs_hms_laboratory', 'access_patient_laboratory_test_manager', 'ir.model.access', 2118, False)
+('acs_hms_laboratory', 'access_hms_patient_laboratory_test_manager', 'ir.model.access', 2119, False)
+('acs_hms_laboratory', 'access_hms_acs_laboratory_request_manager', 'ir.model.access', 2120, False) 
+2023-08-02 04:56:12,461 30444 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_laboratory/data/laboratory_data.xml 
+2023-08-02 04:56:12,476 30444 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_laboratory/views/laboratory_request.xml 
+2023-08-02 04:56:12,587 30444 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_laboratory/views/laboratory_view.xml 
+2023-08-02 04:56:12,607 30444 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_laboratory/views/laboratory_test_view.xml 
+2023-08-02 04:56:12,699 30444 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_laboratory/views/hms_base_view.xml 
+2023-08-02 04:56:12,756 30444 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_laboratory/views/menu_item.xml 
+2023-08-02 04:56:12,801 30444 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_laboratory/report/report_acs_lab_prescription.xml 
+2023-08-02 04:56:12,813 30444 WARNING elite_emr_16 py.warnings: /Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py:299: DeprecationWarning: The <report> tag is deprecated, use a <record> tag for 'report_acs_lab_prescription_id'.
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 937, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 980, in _bootstrap_inner
+    self.run()
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 917, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Users/georgeohia/Projects/odooproj/skin101/env/lib/python3.9/site-packages/werkzeug/serving.py", line 329, in handle
+    rv = BaseHTTPRequestHandler.handle(self)
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/server.py", line 432, in handle
+    self.handle_one_request()
+  File "/Users/georgeohia/Projects/odooproj/skin101/env/lib/python3.9/site-packages/werkzeug/serving.py", line 364, in handle_one_request
+    return self.run_wsgi()
+  File "/Users/georgeohia/Projects/odooproj/skin101/env/lib/python3.9/site-packages/werkzeug/serving.py", line 306, in run_wsgi
+    execute(self.server.app)
+  File "/Users/georgeohia/Projects/odooproj/skin101/env/lib/python3.9/site-packages/werkzeug/serving.py", line 294, in execute
+    application_iter = app(environ, start_response)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1991, in __call__
+    response = request._serve_db()
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1587, in _serve_db
+    return service_model.retrying(self._serve_ir_http, self.env)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/service/model.py", line 134, in retrying
+    result = func()
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1614, in _serve_ir_http
+    response = self.dispatcher.dispatch(rule.endpoint, args)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1811, in dispatch
+    result = self.request.registry['ir.http']._dispatch(endpoint)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_http.py", line 154, in _dispatch
+    result = endpoint(**request.params)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 700, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/addons/web/controllers/dataset.py", line 46, in call_button
+    action = self._call_kw(model, method, args, kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/addons/web/controllers/dataset.py", line 33, in _call_kw
+    return call_kw(request.env[model], method, args, kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/api.py", line 461, in call_kw
+    result = _call_kw_multi(method, model, args, kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/api.py", line 448, in _call_kw_multi
+    result = method(recs, *args, **kwargs)
+  File "<decorator-gen-74>", line 2, in button_immediate_install
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_module.py", line 76, in check_and_log
+    return method(self, *args, **kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_module.py", line 491, in button_immediate_install
+    return self._button_immediate_function(type(self).button_install)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_module.py", line 615, in _button_immediate_function
+    registry = modules.registry.Registry.new(self._cr.dbname, update_module=True)
+  File "<decorator-gen-14>", line 2, in new
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/registry.py", line 90, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 487, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 371, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 230, in load_module_graph
+    load_data(cr, idref, mode, kind='data', package=package)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 71, in load_data
+    tools.convert_file(cr, package.name, filename, idref, mode, noupdate, kind)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 763, in convert_file
+    convert_xml_import(cr, module, fp, idref, mode, noupdate)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 829, in convert_xml_import
+    obj.parse(doc.getroot())
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 749, in parse
+    self._tag_root(de)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 698, in _tag_root
+    f(rec)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 299, in _tag_report
+    warnings.warn(f"The <report> tag is deprecated, use a <record> tag for {xml_id!r}.", DeprecationWarning)
+ 
+2023-08-02 04:56:12,819 30444 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_laboratory/report/lab_report.xml 
+2023-08-02 04:56:12,832 30444 WARNING elite_emr_16 py.warnings: /Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py:299: DeprecationWarning: The <report> tag is deprecated, use a <record> tag for 'action_report_acs_lab_test'.
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 937, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 980, in _bootstrap_inner
+    self.run()
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 917, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Users/georgeohia/Projects/odooproj/skin101/env/lib/python3.9/site-packages/werkzeug/serving.py", line 329, in handle
+    rv = BaseHTTPRequestHandler.handle(self)
+  File "/usr/local/Cellar/python@3.9/3.9.15/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/server.py", line 432, in handle
+    self.handle_one_request()
+  File "/Users/georgeohia/Projects/odooproj/skin101/env/lib/python3.9/site-packages/werkzeug/serving.py", line 364, in handle_one_request
+    return self.run_wsgi()
+  File "/Users/georgeohia/Projects/odooproj/skin101/env/lib/python3.9/site-packages/werkzeug/serving.py", line 306, in run_wsgi
+    execute(self.server.app)
+  File "/Users/georgeohia/Projects/odooproj/skin101/env/lib/python3.9/site-packages/werkzeug/serving.py", line 294, in execute
+    application_iter = app(environ, start_response)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1991, in __call__
+    response = request._serve_db()
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1587, in _serve_db
+    return service_model.retrying(self._serve_ir_http, self.env)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/service/model.py", line 134, in retrying
+    result = func()
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1614, in _serve_ir_http
+    response = self.dispatcher.dispatch(rule.endpoint, args)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 1811, in dispatch
+    result = self.request.registry['ir.http']._dispatch(endpoint)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_http.py", line 154, in _dispatch
+    result = endpoint(**request.params)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/http.py", line 700, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/addons/web/controllers/dataset.py", line 46, in call_button
+    action = self._call_kw(model, method, args, kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/addons/web/controllers/dataset.py", line 33, in _call_kw
+    return call_kw(request.env[model], method, args, kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/api.py", line 461, in call_kw
+    result = _call_kw_multi(method, model, args, kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/api.py", line 448, in _call_kw_multi
+    result = method(recs, *args, **kwargs)
+  File "<decorator-gen-74>", line 2, in button_immediate_install
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_module.py", line 76, in check_and_log
+    return method(self, *args, **kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_module.py", line 491, in button_immediate_install
+    return self._button_immediate_function(type(self).button_install)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/addons/base/models/ir_module.py", line 615, in _button_immediate_function
+    registry = modules.registry.Registry.new(self._cr.dbname, update_module=True)
+  File "<decorator-gen-14>", line 2, in new
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/registry.py", line 90, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 487, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 371, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 230, in load_module_graph
+    load_data(cr, idref, mode, kind='data', package=package)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/modules/loading.py", line 71, in load_data
+    tools.convert_file(cr, package.name, filename, idref, mode, noupdate, kind)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 763, in convert_file
+    convert_xml_import(cr, module, fp, idref, mode, noupdate)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 829, in convert_xml_import
+    obj.parse(doc.getroot())
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 749, in parse
+    self._tag_root(de)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 698, in _tag_root
+    f(rec)
+  File "/Users/georgeohia/Projects/odooproj/odoo16/odoo/tools/convert.py", line 299, in _tag_report
+    warnings.warn(f"The <report> tag is deprecated, use a <record> tag for {xml_id!r}.", DeprecationWarning)
+ 
+2023-08-02 04:56:12,835 30444 INFO elite_emr_16 odoo.modules.loading: loading acs_hms_laboratory/report/discharge_summary_report.xml 
+2023-08-02 04:56:12,956 30444 INFO elite_emr_16 odoo.modules.loading: Module acs_hms_laboratory loaded in 1.62s, 869 queries (+869 other) 
+2023-08-02 04:56:12,957 30444 INFO elite_emr_16 odoo.modules.loading: 47 modules loaded in 4.46s, 1955 queries (+1955 extra) 
+2023-08-02 04:56:12,958 30444 WARNING elite_emr_16 odoo.modules.graph: module web_responsive: not installable, skipped 
+2023-08-02 04:56:12,959 30444 INFO elite_emr_16 odoo.modules.loading: loading 47 modules... 
+2023-08-02 04:56:12,959 30444 INFO elite_emr_16 odoo.modules.loading: 47 modules loaded in 0.00s, 0 queries (+0 extra) 
+2023-08-02 04:56:13,026 30444 WARNING elite_emr_16 odoo.fields: patient.death.register.patient_sex: selection attribute will be ignored as the field is related 
+2023-08-02 04:56:13,027 30444 WARNING elite_emr_16 odoo.fields: patient.accomodation.history.invoice_policy: selection attribute will be ignored as the field is related 
+2023-08-02 04:56:13,038 30444 WARNING elite_emr_16 odoo.fields: Field hr.employee.public.birthday: unknown parameter 'tracking', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:56:13,053 30444 WARNING elite_emr_16 odoo.fields: Field hms.patient.disease.disease_severity: unknown parameter 'sort', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:56:13,053 30444 WARNING elite_emr_16 odoo.fields: Field hms.patient.disease.status: unknown parameter 'sort', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:56:13,053 30444 WARNING elite_emr_16 odoo.fields: Field hms.patient.disease.allergy_type: unknown parameter 'sort', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:56:13,055 30444 WARNING elite_emr_16 odoo.fields: Field hms.treatment.disease_severity: unknown parameter 'sort', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:56:13,056 30444 WARNING elite_emr_16 odoo.fields: Redundant default on patient.death.register.patient_sex 
+2023-08-02 04:56:13,176 30444 WARNING elite_emr_16 odoo.fields: patient.death.register.patient_sex: selection attribute will be ignored as the field is related 
+2023-08-02 04:56:13,177 30444 WARNING elite_emr_16 odoo.fields: patient.accomodation.history.invoice_policy: selection attribute will be ignored as the field is related 
+2023-08-02 04:56:13,191 30444 WARNING elite_emr_16 odoo.fields: Field hr.employee.public.birthday: unknown parameter 'tracking', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:56:13,213 30444 WARNING elite_emr_16 odoo.fields: Field hms.patient.disease.disease_severity: unknown parameter 'sort', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:56:13,213 30444 WARNING elite_emr_16 odoo.fields: Field hms.patient.disease.status: unknown parameter 'sort', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:56:13,213 30444 WARNING elite_emr_16 odoo.fields: Field hms.patient.disease.allergy_type: unknown parameter 'sort', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:56:13,214 30444 WARNING elite_emr_16 odoo.fields: Field hms.treatment.disease_severity: unknown parameter 'sort', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2023-08-02 04:56:13,215 30444 WARNING elite_emr_16 odoo.fields: Redundant default on patient.death.register.patient_sex 
+2023-08-02 04:56:13,258 30444 ERROR elite_emr_16 odoo.modules.loading: Some modules are not loaded, some dependencies or manifest may be missing: ['web_responsive'] 
+2023-08-02 04:56:14,296 30444 INFO elite_emr_16 odoo.modules.loading: Modules loaded. 
+2023-08-02 04:56:14,309 30444 INFO elite_emr_16 odoo.modules.registry: Registry loaded in 6.668s 
+2023-08-02 04:56:14,310 30444 INFO elite_emr_16 odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
+2023-08-02 04:56:14,316 30444 INFO elite_emr_16 odoo.modules.registry: Registry changed, signaling through the database 
+2023-08-02 04:56:14,317 30444 INFO elite_emr_16 werkzeug: 127.0.0.1 - - [02/Aug/2023 04:56:14] "POST /web/dataset/call_button HTTP/1.1" 200 - 3949 3.822 4.197
+2023-08-02 04:56:14,379 30444 INFO elite_emr_16 odoo.addons.base.models.ir_http: Generating routing map for key None 
+2023-08-02 04:56:15,477 30444 INFO elite_emr_16 werkzeug: 127.0.0.1 - - [02/Aug/2023 04:56:15] "GET /web HTTP/1.1" 200 - 94 0.078 1.031
+2023-08-02 04:56:15,876 30444 INFO elite_emr_16 werkzeug: 127.0.0.1 - - [02/Aug/2023 04:56:15] "GET /web/webclient/load_menus/3b057e262918b9a0a8e247cfc6646f4b39c89a9398d00cfcf2d2f94a3213c500 HTTP/1.1" 200 - 2 0.032 0.202
+2023-08-02 04:56:15,876 30444 INFO elite_emr_16 werkzeug: 127.0.0.1 - - [02/Aug/2023 04:56:15] "GET /web/webclient/translations/b975013fb067e9c9146d533debbf8ba8ba90e0a1?lang=en_US HTTP/1.1" 200 - 3 0.045 0.137
+2023-08-02 04:56:16,490 30444 INFO elite_emr_16 werkzeug: 127.0.0.1 - - [02/Aug/2023 04:56:16] "POST /web/action/load HTTP/1.1" 200 - 8 0.007 0.010
+2023-08-02 04:56:16,690 30444 INFO elite_emr_16 werkzeug: 127.0.0.1 - - [02/Aug/2023 04:56:16] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 20 0.064 0.152
+2023-08-02 04:56:16,785 30444 INFO elite_emr_16 werkzeug: 127.0.0.1 - - [02/Aug/2023 04:56:16] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 3 0.021 0.007
+2023-08-02 04:56:16,900 30444 INFO elite_emr_16 werkzeug: 127.0.0.1 - - [02/Aug/2023 04:56:16] "POST /mail/init_messaging HTTP/1.1" 200 - 50 0.117 0.030
+2023-08-02 04:56:16,947 30444 INFO elite_emr_16 werkzeug: 127.0.0.1 - - [02/Aug/2023 04:56:16] "POST /mail/inbox/messages HTTP/1.1" 200 - 7 0.010 0.006
+2023-08-02 04:56:16,951 30444 INFO elite_emr_16 werkzeug: 127.0.0.1 - - [02/Aug/2023 04:56:16] "POST /mail/load_message_failures HTTP/1.1" 200 - 3 0.007 0.007
