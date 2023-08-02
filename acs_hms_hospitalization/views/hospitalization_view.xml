@@ -34,7 +34,7 @@
                         </button>
                     </div>
                     <h1>
-                        <label for="name" string="Hospitalization #" attrs="{'invisible': ['|',('state','not in',('draft',))]}"/>
+                        <label for="name" string="Hospitalization #" attrs="{'invisible': [('state','not in',('draft',))]}"/>
                         <field name="name" readonly="1" class="oe_inline" attrs="{'invisible': [('state','in',('draft',))]}"/>
                     </h1>
 
