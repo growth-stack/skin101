@@ -39,9 +39,6 @@
         'views/menu_item.xml',
     ],
     'demo': [],
-    'images': [
-        'static/description/hms_hospitalization_almightycs_odoo_cover.jpg',
-    ],
     'sequence': 1,
     'application': True,
     'price': 51,

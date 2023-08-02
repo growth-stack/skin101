@@ -139,6 +139,10 @@ class PatientLabTest(models.Model):
 
     def action_cancel(self):
         self.state = 'cancel'
+        
+    def button_cancel(self):
+        self.state = 'cancel'
+
 
 
 class LabTestCritearea(models.Model):
