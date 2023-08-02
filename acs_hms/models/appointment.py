@@ -33,13 +33,13 @@ class Appointment(models.Model):
             consultation = self.env.user.company_id.consultation_product_id.id
         return consultation
 
-    @api.onchange('department_id')
-    def onchange_department(self):
-        res = {}
-        if self.department_id:
-            physicians = self.env['hms.physician'].search([('department_ids', 'in', self.department_id.id)])
-            res['domain'] = {'physician_id':[('id','in',physicians.ids)]}
-        return res
+    # @api.onchange('department_id')
+    # def onchange_department(self):
+    #     res = {}
+    #     if self.department_id:
+    #         physicians = self.env['hms.physician'].search([('department_ids', 'in', self.department_id.id)])
+    #         # res['domain'] = {'physician_id':[('id','in',physicians.ids)]}
+    #     return res
 
     @api.depends('medical_alert_ids')
     def _get_alert_count(self):
