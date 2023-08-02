@@ -14,7 +14,7 @@ class ACSHmsMixin(models.AbstractModel):
         invoice = self.env['account.move'].create({
             'partner_id': patient.partner_id.id,
             'patient_id': patient.id,
-            'type': 'out_invoice',
+            'move_type': 'out_invoice',
             'ref': self.name,
             'currency_id': self.env.user.company_id.currency_id.id,
             'invoice_line_ids': self.acs_get_invoice_lines(product_data, patient),
@@ -24,10 +24,10 @@ class ACSHmsMixin(models.AbstractModel):
         invoice._onchange_partner_id()
 
         for line in invoice.invoice_line_ids:
-            line._get_computed_name()
-            line._get_computed_account()
+            # line._get_computed_name()
+            # line._get_computed_account()
             line._get_computed_taxes()
-            line._get_computed_uom()
+            # line._get_computed_uom()
         return invoice
 
     @api.model
@@ -37,7 +37,7 @@ class ACSHmsMixin(models.AbstractModel):
             product = data.get('product_id')
             if product:
                 if not data.get('price_unit') and patient.property_product_pricelist:
-                    price = product.with_context(pricelist=patient.property_product_pricelist.id).price
+                    price = product.with_context(pricelist=patient.property_product_pricelist.id).list_price
                 else:
                     price = data.get('price_unit', product.list_price)
                 lines.append((0, 0, {
@@ -47,7 +47,7 @@ class ACSHmsMixin(models.AbstractModel):
                     'quantity': data.get('quantity',1.0),
                     'discount': data.get('discount',0.0),
                     'product_uom_id': data.get('product_uom_id',product.uom_id.id),
-                    'analytic_account_id': data.get('account_analytic_id',False),
+                    # 'analytic_account_id': data.get('account_analytic_id',False),
                 }))
             else:
                 lines.append((0, 0, {
@@ -65,10 +65,10 @@ class ACSHmsMixin(models.AbstractModel):
             action['views'] = [(self.env.ref('account.view_move_form').id, 'form')]
             action['res_id'] = invoices.id
         else:
-            action = {'type': 'ir.actions.act_window_close'}
+            action = {'move_type': 'ir.actions.act_window_close'}
 
         context = {
-            'default_type': 'out_invoice',
+            'default_move_type': 'out_invoice',
         }
         action['context'] = context
         return action
@@ -120,7 +120,7 @@ class ResPartner(models.Model):
     birthday = fields.Date(string='Date of Birth')
     date_of_death = fields.Date(string='Date of Death')
     age = fields.Char(string='Age', compute='_get_age')
-    is_referring_doctor = fields.Boolean(string="Is Refereinng Physician")
+    is_referring_doctor = fields.Boolean(string="Is Referring Physician")
     hospital_name = fields.Char()
     blood_group = fields.Selection([
         ('A+', 'A+'),('A-', 'A-'),
