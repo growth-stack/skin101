@@ -24,7 +24,7 @@ class product_template(models.Model):
         ('pathology', 'Pathology'),
         ('radiology', 'Radiology'),
         ('consultation', 'Consultation'),
-        ('os', 'Other Service')], string="Hospital Product Type", default='medicament')
+        ('os', 'Other Service')], string="Hospital Product Type")
     active_component_ids = fields.Many2many('active.comp', 'product_act_comp_rel',
                                             'medica_id', 'product_id', string='Active Component')
     indications = fields.Text(string='Indication', help='Indications')

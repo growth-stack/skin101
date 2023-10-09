@@ -11,7 +11,7 @@
         <record id="group_hms_lab_manager" model="res.groups">
             <field name="name">Lab Manager</field>
             <field name="category_id" ref="acs_hms.module_category_hms"/>
-            <field name="implied_ids" eval="[(4, ref('group_hms_lab_user')), (4, ref('account.group_account_invoice'))]"/>
+            <field name="implied_ids" eval="[(4, ref('group_hms_lab_user'))]"/>
         </record>
 
         <record id="base.user_admin" model="res.users">
