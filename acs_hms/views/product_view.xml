@@ -6,10 +6,10 @@
         <field name="model">product.template</field>
         <field name="inherit_id" ref="product.product_template_form_view"/>
         <field name="arch" type="xml">
-            <field name="type" position="after">
+            <field name="detailed_type" position="before">
                 <field name="hospital_product_type" required="1"/>
             </field>
-            <xpath expr="//notebook/page[@name='general_information']" position="before">
+            <xpath expr="//notebook/page[@name='general_information']" position="after">
                 <page string="Medicament Details" attrs="{'invisible': [('hospital_product_type', '!=', 'medicament')]}">
                     <group>
                         <group>
