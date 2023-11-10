@@ -43,8 +43,8 @@ class ResConfigSettings(models.TransientModel):
         related='company_id.appointment_stock_location',
         domain=[('usage','=','internal')],
         string='Stock Location for Consumed Products in Appointment', readonly=False)
-    group_patient_registartion_invoicing = fields.Boolean("Patient Registration Invoicing", implied_group='acs_hms.group_patient_registartion_invoicing')
-    group_treatment_invoicing = fields.Boolean("Treatment Invoicing", implied_group='acs_hms.group_treatment_invoicing')
+    group_patient_registartion_invoicing = fields.Boolean("Patient Registration Invoicing",)
+    group_treatment_invoicing = fields.Boolean("Treatment Invoicing")
 
     @api.onchange('appointment_anytime_invoice')
     def onchnage_appointment_anytime_invoice(self):
