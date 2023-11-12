@@ -9,7 +9,7 @@
                 <header>
                     <button name="treatment_running" states="draft" type="object" groups="acs_hms.group_hms_receptionist" string="Confirm" class="oe_highlight"/>
                     <button name="treatment_done" states="running" groups="acs_hms.group_hms_jr_doctor" type="object" string="Done" class="oe_highlight"/>
-                    <!-- <button name="create_invoice" string="Create Invoice" attrs="{'invisible': ['|',('invoice_id', '!=', False),('state','=','cancel')]}" type="object" groups="acs_hms.group_treatment_invoicing" class="oe_stat_button" icon="fa-pencil-square-o"/> -->
+                    <button name="create_invoice" string="Create Invoice" attrs="{'invisible': ['|',('invoice_id', '!=', False),('state','=','cancel')]}" type="object" groups="acs_hms.group_treatment_invoicing2" class="oe_stat_button" icon="fa-pencil-square-o"/>
                     <button name="treatment_cancel" string="Cancel" states="draft,running,done" type="object" class="oe_highlight"/>
                     <button name="treatment_draft" string="Draft" states="cancel" type="object" class="oe_highlight"/>
                     <field name="state" widget="statusbar" statusbar_visible="draft,running,done"/>
@@ -33,7 +33,7 @@
                             <field name="physician_id" string="Doctor"/>
                             <field name="diagnosis_id"/>
                             <field name="age" readonly="1"/>
-                            <field name="registration_product_id" />
+                            <field name="registration_product_id" groups="acs_hms.group_treatment_invoicing2"/>
                             <field name="invoice_id" invisible="1"/>
                             <field name="alert_count" invisible="1"/>
                         </group>

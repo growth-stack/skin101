@@ -58,7 +58,7 @@
         <field name="arch" type="xml">
             <form string="Patient">
                 <header>
-                    <!-- <button name="create_invoice" string="Create Invoice" type="object" class="oe_highlight" attrs="{'invisible': [('invoice_id','!=',False)]}" groups="acs_hms.group_patient_registartion_invoicing"/> -->
+                    <button name="create_invoice" string="Create Invoice" type="object" class="oe_highlight" attrs="{'invisible': [('invoice_id','!=',False)]}" groups="acs_hms.group_patient_registartion_invoicing2"/>
                     <field name="invoice_id" invisible="1"/>
                 </header>
                 <sheet>
