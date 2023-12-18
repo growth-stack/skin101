@@ -119,7 +119,7 @@ class Migration(models.TransientModel):
                     'legacy_appointment_no': appointment_no,
                     'complaint_date': date_diagnosis,
                     'patient_id': patient.id,
-                    'complaint': findings,
+                    'action_ta': findings,
                     'complaint_subject': 'Patient complaint',
                 }
                 # Check if complaint already exists
