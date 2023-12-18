@@ -33,6 +33,7 @@ Beauty app
         'data/teeth_code.xml',
         'views/dental_view.xml',
         'wizard/wizard_actions.xml',
+        'wizard/wizard_migration.xml',
         'views/dental_sequences.xml',
         'report/income_by_procedure_qweb.xml',
         'report/patient_by_procedure_qweb.xml',

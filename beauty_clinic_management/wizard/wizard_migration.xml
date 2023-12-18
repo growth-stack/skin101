@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="wizard_migrate_form" model="ir.ui.view">
+        <field name="name">wizard.migration.form</field>
+        <field name="model">wizard.migration</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="Import">
+                <group>
+                    <group>
+                        <field name="file" filename="file_name"/>
+                        <field name="file_name" readonly="1" force_save="1"/> 
+                    </group>
+                    <group></group>
+                </group>
+                <div class="oe_clear"/>
+                <separator colspan="10" />
+                <footer>
+                    <button special="cancel" string="Close" />
+                    <button name="action_migrate" type="object" class="oe_highlight" string="Import" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <!--report-->
+    <record id="action_wizard_migrate" model="ir.actions.act_window">
+        <field name="name">Migration</field>
+        <field name="res_model">wizard.migration</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+        <menuitem name="Migrate" id="menu_migrate"
+                  parent="medical_conf_procedure" sequence="1" action="action_wizard_migrate" groups="base.group_system"/>
+
+</odoo>

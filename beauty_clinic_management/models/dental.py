@@ -2234,6 +2234,7 @@ class patient_complaint(models.Model):
     complaint_date = fields.Datetime('Complaint Date')
     complaint = fields.Text('Complaint')
     action_ta = fields.Text('Action Taken Against')
+    legacy_appointment_no = fields.Char('Legacy Appointment No', help="Used for data migration")
 
 
 class ir_attachment(models.Model):
