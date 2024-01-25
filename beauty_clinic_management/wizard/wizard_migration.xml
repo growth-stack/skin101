@@ -31,7 +31,7 @@
         <field name="target">new</field>
     </record>
 
-        <menuitem name="Migrate" id="menu_migrate"
-                  parent="medical_conf_procedure" sequence="1" action="action_wizard_migrate" groups="base.group_system"/>
+        <!-- <menuitem name="Migrate" id="menu_migrate"
+                  parent="medical_conf_procedure" sequence="1" action="action_wizard_migrate" groups="base.group_system"/> -->
 
 </odoo>

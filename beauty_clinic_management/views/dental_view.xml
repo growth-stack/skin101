@@ -987,6 +987,14 @@
                                     attrs="{'invisible': [('invoice_count', '=', 0)]}">
                                 <field name="invoice_count" widget="statinfo" string="Invoices"/>
                             </button>
+                            <field name="is_company" invisible="1"/>
+                            <button groups="sign.group_sign_user" name="open_signatures" type="object" class="oe_stat_button" icon="fa-pencil"
+                                attrs="{'invisible': ['|', ('signature_count', '=', 0), ('is_company', '=', True)]}">
+                                <div class="o_field_widget o_stat_info">
+                                    <span class="o_stat_value"><field name="signature_count"/></span>
+                                    <span class="o_stat_text">Signature Requested</span>
+                                </div>
+                            </button>
 
                         </div>
 

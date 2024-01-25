@@ -630,6 +630,8 @@ class MedicalPatient(models.Model):
 
     partner_id = fields.Many2one('res.partner', 'Patient', required="1",
                                  domain=[('is_patient', '=', True), ('is_person', '=', True)], help="Patient Name")
+    signature_count = fields.Integer(related='partner_id.signature_count', store=True)
+    is_company = fields.Boolean(related='partner_id.is_company', store=True)
     patient_id = fields.Char('Patient ID', size=64,
                              help="Patient Identifier provided by the Health Center. Is not the patient id from the partner form",
                              default=lambda self: _('New'))
@@ -735,6 +737,23 @@ class MedicalPatient(models.Model):
     civil_id = fields.Char('Civil Id')
     family_link = fields.Boolean('Family Link')
     link_partner_id = fields.Many2one('medical.patient', 'Link Partner')
+
+
+    def open_signatures(self):
+        self.ensure_one()
+        request_ids = self.env['sign.request.item'].search([('partner_id', '=', self.partner_id.id)]).mapped('sign_request_id')
+        return {
+            'type': 'ir.actions.act_window',
+            'name': _('Signature(s)'),
+            'view_mode': 'kanban,tree,form',
+            'res_model': 'sign.request',
+            'domain': [('id', 'in', request_ids.ids)],
+            'context': {
+                'search_default_reference': self.partner_id.name,
+                'search_default_signed': 1,
+                'search_default_in_progress': 1,
+            },
+        }
 
     def blockpatient(self):
         self.active = False
