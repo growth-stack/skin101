@@ -1505,9 +1505,9 @@ class MedicalAppointment(models.Model):
     def get_data(self, doctor_id, event_name, index):
         record = self.search([('name', '=', event_name), ('doctor', '=', doctor_id)], limit=1)
         if record:
-            return {'index': index, 'patient': record.patient.partner_id.name}
+            return {'index': index, 'patient': record.patient.partner_id.name, "services": ",".join(record.services_ids.mapped("name"))}
         else:
-            return {'index': 0, 'patient': record.patient.partner_id.name}
+            return {'index': 0, 'patient': record.patient.partner_id.name, "services": ",".join(record.services_ids.mapped("name"))}
 
     @api.model
     def _get_default_doctor(self):

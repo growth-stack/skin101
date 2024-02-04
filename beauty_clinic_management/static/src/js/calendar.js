@@ -291,7 +291,7 @@ odoo.define('beauty_clinic_management.calendar', function(require) {
                         "width": "90px",
                         "padding-top": "0px",
                         "margin-top": 0 + '%',
-                        // "background-color": "lightpink",
+                        "background-color": "lightpink",
 //                        "margin-top": "1px"
                     })
 //                    console.log("=======self.$el========",self.$el)
@@ -492,7 +492,7 @@ odoo.define('beauty_clinic_management.calendar', function(require) {
                                         $(ge).css({
                                             "padding-top": "0px",
                                             "width": "90px",
-                                            // "background-color": "lightpink",
+                                            "background-color": "lightpink",
                                             "margin-left": res.index * 260 + 'px'
                                         })
                                         if(res.patient){
