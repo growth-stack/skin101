@@ -480,14 +480,14 @@ patch(CalendarCommonRenderer.prototype, 'calendar_commCalendarRenderer', {
                                         
                                     })
                                     if(res.patient){
-                                        $(ge).find(".o_event_title")[0].innerText = res.patient  + "\n\n" + res.services
+                                        $(ge).find(".o_event_title")[0].innerText = res.patient  + "\n" + res.services
                                         console.log('===================patientttttttttttt===' , res.patient , $(ge).find(".o_event_title")[0].innerText , doctor_id)
                                     }
 
                                 }
                                 else{
                                     if(res.patient){
-                                        $(ge).find(".o_event_title")[0].innerText = res.patient  + "\n\n" + res.services
+                                        $(ge).find(".o_event_title")[0].innerText = res.patient  + "\n" + res.services
                                     }
                                 }
                             })
