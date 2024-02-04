@@ -658,6 +658,7 @@ class MedicalPatient(models.Model):
                               store=True)
     medications = fields.One2many('medical.patient.medication', 'name', 'Medications')
     prescriptions = fields.One2many('medical.prescription.order', 'name', "Prescriptions")
+    medication_list_ids = fields.One2many('medical.medication.list', 'patient_id', 'Medication List', compute="_compute_medication_list", store=True)
     diseases_ids = fields.One2many('medical.patient.disease', 'name', 'Diseases')
     critical_info = fields.Text(compute='_medical_alert', string='Medical Alert',
                                 help="Write any important information on the patient's disease, surgeries, allergies, ...")
@@ -739,6 +740,37 @@ class MedicalPatient(models.Model):
     link_partner_id = fields.Many2one('medical.patient', 'Link Partner')
 
 
+    @api.depends("prescriptions")
+    def _compute_medication_list(self):
+        for rec in self:
+            medication_list, medicines = [], []
+            for line in rec.prescriptions.prescription_line:
+                # push the list of the drugs the patient is taken into a list
+                medicines.append(line.medicine_id.name.id)
+            unique_medications = list(set(medicines))
+            medication_products = self.env["product.product"].browse(unique_medications)
+            for medicine in medication_products:
+                prescription_line = self.get_prescription_details(medicine)
+                prescription_order = self.env['medical.prescription.order'].sudo().search([("id","=", prescription_line.name.id)])
+                medication_list +=  [(0,0, {
+                    "patient_id": self.id,
+                    "medicine_id": medicine.id,
+                    "prescription_id": prescription_order.id,
+                    "prescription_line_id": prescription_line.id,
+                    "prescription_date": prescription_order.prescription_date
+                })]
+            rec.medication_list_ids = medication_list
+            
+
+    def get_prescription_details(self, medicine_product):
+        # Returns the details of the latest prescription for a specific drug
+        print("medicine product", medicine_product)
+        latest_medication = self.env['medical.medicine.prag'].sudo().search([("name","=",medicine_product.id)], limit = 1)
+        prescription_line = self.env['medical.prescription.line'].sudo().search([("medicine_id","=", latest_medication.id)])
+        return prescription_line
+        
+        
+        
     def open_signatures(self):
         self.ensure_one()
         request_ids = self.env['sign.request.item'].search([('partner_id', '=', self.partner_id.id)]).mapped('sign_request_id')
@@ -2033,6 +2065,34 @@ class MedicalPrescriptionLine(models.Model):
         ('weeks', 'weeks'),
         ('wr', 'when required'),
     ], 'Duration Unit', default='days', )
+
+class MedicalPrescriptionLine(models.Model):
+    _name = "medical.medication.list"
+    _description = "A persistent list of medications taken by a patient"
+
+    patient_id = fields.Many2one('medical.patient', 'Patient', help="Patient", required=True, )
+    medicine_id = fields.Many2one('product.product', 'Medicine', required=True, ondelete="cascade")
+    prescription_id = fields.Many2one('medical.prescription.order', 'Prescription ID')
+    prescription_line_id = fields.Many2one("medical.prescription.line")
+    prescription_date = fields.Datetime(related="prescription_id.prescription_date")
+    # quantity = fields.Integer('Quantity', default=1)
+    # note = fields.Char('Note', size=128, help='Short comment on the specific drug')
+    # dose = fields.Float('Dose', help="Amount of medication (eg, 250 mg ) each time the patient takes it")
+    # dose_unit = fields.Many2one('medical.dose.unit', 'Dose Unit', help="Unit of measure for the medication to be taken")
+    # form = fields.Many2one('medical.drug.form', 'Form', help="Drug form, such as tablet or gel")
+    # qty = fields.Integer('x', default=1, help="Quantity of units (eg, 2 capsules) of the medicament")
+    # common_dosage = fields.Many2one('medical.medication.dosage', 'Frequency',
+    #                                 help="Common / standard dosage frequency for this medicament")
+    # duration = fields.Integer('Duration',
+    #                           help="Time in between doses the patient must wait (ie, for 1 pill each 8 hours, put here 8 and select 'hours' in the unit field")
+    # duration_period = fields.Selection([
+    #     ('seconds', 'seconds'),
+    #     ('minutes', 'minutes'),
+    #     ('hours', 'hours'),
+    #     ('days', 'days'),
+    #     ('weeks', 'weeks'),
+    #     ('wr', 'when required'),
+    # ], 'Duration Unit', default='days', )
 
 
 # HEALTH CENTER / HOSPITAL INFRASTRUCTURE
