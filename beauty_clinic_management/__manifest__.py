@@ -64,7 +64,8 @@ Beauty app
         'web.assets_backend': [
             'beauty_clinic_management/static/src/xml/*.xml',
             'beauty_clinic_management/static/src/js/*.js',
-            'beauty_clinic_management/static/src/css/base_new.css'
+            'beauty_clinic_management/static/src/css/base_new.css',
+            'beauty_clinic_management/static/src/css/calendar.css'
         ],
         
     },

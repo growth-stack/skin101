@@ -314,7 +314,7 @@ patch(CalendarCommonRenderer.prototype, 'calendar_commCalendarRenderer', {
                     "width": "100px",
                     "padding-top": "0px",
                     "margin-top": 0 + '%',
-                    "background-color": "lightpink",
+                    // "background-color": "lightpink",
                    
                                     
                 })
@@ -475,7 +475,7 @@ patch(CalendarCommonRenderer.prototype, 'calendar_commCalendarRenderer', {
                                     $(ge).css({
                                         "padding-top": "0px",
                                         "width": "90px",
-                                        "background-color": "lightpink",
+                                        // "background-color": "lightpink",
                                         "margin-left": res.index * 260 + 'px',
                                         
                                     })

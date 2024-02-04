@@ -1,0 +1,18 @@
+.o_calendar_color_draft {
+    background-color: #FFD700;  /* Yellow for draft state */
+    background: #FFD700 !important;
+
+}
+.o_calendar_renderer .fc-view .o_calendar_color_6.fc-event{
+    background-color: #00FF00 !important;  /* Green for confirmed state */
+}
+
+/* .o_calendar_color_confirmed {
+    background-color: #00FF00;  
+} */
+
+.o_calendar_color_done {
+    background-color: #0000FF;  /* Blue for done state */
+}
+
+/* Add other state colors as needed */
