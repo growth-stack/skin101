@@ -766,7 +766,7 @@ class MedicalPatient(models.Model):
         # Returns the details of the latest prescription for a specific drug
         print("medicine product", medicine_product)
         latest_medication = self.env['medical.medicine.prag'].sudo().search([("name","=",medicine_product.id)], limit = 1)
-        prescription_line = self.env['medical.prescription.line'].sudo().search([("medicine_id","=", latest_medication.id)])
+        prescription_line = self.env['medical.prescription.line'].sudo().search([("medicine_id","=", latest_medication.id)], limit=1)
         return prescription_line
         
         
