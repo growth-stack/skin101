@@ -744,7 +744,7 @@ class MedicalPatient(models.Model):
     def _compute_medication_list(self):
         for rec in self:
             medication_list, medicines = [], []
-            # rec.medication_list_ids = False
+            rec.medication_list_ids.unlink()
             for line in rec.prescriptions.prescription_line:
                 # push the list of the drugs the patient is taken into a list
                 medicines.append(line.medicine_id.name.id)
