@@ -738,14 +738,33 @@ class MedicalPatient(models.Model):
     civil_id = fields.Char('Civil Id')
     family_link = fields.Boolean('Family Link')
     link_partner_id = fields.Many2one('medical.patient', 'Link Partner')
+    invoice_ids = fields.One2many('account.move', 'partner_id', 'Invoices', compute='compute_invoices')
 
+    def compute_invoices(self):
+        for rec in self:
+            rec.invoice_ids = self.env['account.move'].search(
+                [('partner_id', '=', rec.partner_id.id), ('move_type', '!=', 'entry')]
+            )
 
-    @api.onchange("prescriptions")
+    
+    @api.onchange(
+        "invoice_ids",
+        "invoice_ids.payment_state", 
+        "invoice_ids.invoice_line_ids"
+    )
     def _onchange_prescriptions(self):
         medication_list, medicines = [], []
-        for line in self.prescriptions.prescription_line:
-            # push the list of the drugs the patient is taken into a list
-            medicines.append(line.medicine_id.name.id)
+        # Get list of paid invoices 
+        invoice_ids = self.env['account.move'].search([('partner_id', '=', self.partner_id.id), ('state', '=', 'posted'), ('move_type', '!=', 'entry')])
+        # paid_invoices = invoice_ids.filtered(lambda x: x.payment_state == 'paid')
+        # Get the product ids from the paid invoices
+        for invoice in invoice_ids:
+            for line in invoice.invoice_line_ids:
+                medicines.append(line.product_id.id)
+        
+        # for line in self.prescriptions.prescription_line:
+        #     # push the list of the drugs the patient is taken into a list
+        #     medicines.append(line.medicine_id.name.id)
         unique_medications = list(set(medicines))
         medication_products = self.env["product.product"].browse(unique_medications)
         for medicine in medication_products:
@@ -762,11 +781,7 @@ class MedicalPatient(models.Model):
         
         self.update({ 'medication_list_ids' : [(5, _, _)]})
         self.update({ 'medication_list_ids' : medication_list})
-
-        # self.medication_list_ids = medication_list
-          
-                
-            
+        
 
     def get_prescription_details(self, medicine_product):
         # Returns the details of the latest prescription for a specific drug
