@@ -758,14 +758,9 @@ class MedicalPatient(models.Model):
                     "prescription_line_id": prescription_line.id,
                     "prescription_date": prescription_order.prescription_date
                 }
-            # if medication exists, update the values else create a new record
-            # medication_exists = rec.medication_list_ids.filtered(lambda x: x.medicine_id == medicine.id)
-            # if medication_exists:
-            #     medication_exists.write(vals)
-            # else:
             medication_list +=  [(0,0, vals)]
-           
-        self.update({ 'medication_list_ids' : [(5, 0, 0)]})
+        
+        self.update({ 'medication_list_ids' : [(5, _, _)]})
         self.update({ 'medication_list_ids' : medication_list})
 
         # self.medication_list_ids = medication_list
