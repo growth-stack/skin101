@@ -743,6 +743,7 @@ class MedicalPatient(models.Model):
     @api.depends("prescriptions")
     def _compute_medication_list(self):
         for rec in self:
+            rec.medication_list_ids = [(5, 0, 0)]
             medication_list, medicines = [], []
             for line in rec.prescriptions.prescription_line:
                 # push the list of the drugs the patient is taken into a list
@@ -760,14 +761,15 @@ class MedicalPatient(models.Model):
                         "prescription_date": prescription_order.prescription_date
                     }
                 # if medication exists, update the values else create a new record
-                medication_exists = rec.medication_list_ids.filtered(lambda x: x.medicine_id == medicine.id)
-                if medication_exists:
-                    medication_exists.write(vals)
-                else:
-                    medication_list +=  [(0,0, vals)]
+                # medication_exists = rec.medication_list_ids.filtered(lambda x: x.medicine_id == medicine.id)
+                # if medication_exists:
+                #     medication_exists.write(vals)
+                # else:
+                medication_list +=  [(0,0, vals)]
+            
+            rec.medication_list_ids = medication_list
+          
                 
-            if medication_list:
-                rec.medication_list_ids = medication_list
             
 
     def get_prescription_details(self, medicine_product):
