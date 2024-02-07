@@ -742,7 +742,6 @@ class MedicalPatient(models.Model):
 
     @api.onchange("prescriptions")
     def _onchange_prescriptions(self):
-        self.medication_list_ids = [(5, 0, 0)]
         medication_list, medicines = [], []
         for line in self.prescriptions.prescription_line:
             # push the list of the drugs the patient is taken into a list
@@ -765,8 +764,11 @@ class MedicalPatient(models.Model):
             #     medication_exists.write(vals)
             # else:
             medication_list +=  [(0,0, vals)]
-        
-        self.medication_list_ids = medication_list
+           
+        self.update({ 'medication_list_ids' : [(5, 0, 0)]})
+        self.update({ 'medication_list_ids' : medication_list})
+
+        # self.medication_list_ids = medication_list
           
                 
             
