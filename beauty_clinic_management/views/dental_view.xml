@@ -1150,7 +1150,7 @@
                             </page>
                             <page string="Medication List">
                                 <field name="medication_list_ids" string="Medication List" nolabel="1">
-                                        <tree string='medication list'>
+                                        <tree string='medication list' delete="0" create="0">
                                             <field name="medicine_id"/>
                                             <field name="prescription_id"/>
                                             <field name="prescription_date"/>

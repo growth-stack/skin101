@@ -749,6 +749,7 @@ class MedicalPatient(models.Model):
     
     @api.onchange(
         "invoice_ids",
+        "invoice_ids.state", 
         "invoice_ids.payment_state", 
         "invoice_ids.invoice_line_ids"
     )
