@@ -658,7 +658,7 @@ class MedicalPatient(models.Model):
                               store=True)
     medications = fields.One2many('medical.patient.medication', 'name', 'Medications')
     prescriptions = fields.One2many('medical.prescription.order', 'name', "Prescriptions")
-    medication_list_ids = fields.One2many('medical.medication.list', 'patient_id', 'Medication List')
+    medication_list_ids = fields.One2many('medical.medication.list', 'patient_id', 'Medication List', compute="_compute_medication_list", store=True)
     diseases_ids = fields.One2many('medical.patient.disease', 'name', 'Diseases')
     critical_info = fields.Text(compute='_medical_alert', string='Medical Alert',
                                 help="Write any important information on the patient's disease, surgeries, allergies, ...")
@@ -747,42 +747,40 @@ class MedicalPatient(models.Model):
             )
 
     
-    @api.onchange(
-        "invoice_ids",
-        "invoice_ids.state", 
-        "invoice_ids.payment_state", 
-        "invoice_ids.invoice_line_ids",
+    @api.depends(
+        "prescriptions",
         "prescriptions.prescription_line"
     )
-    def _onchange_prescriptions(self):
-        medication_list, medicines = [], []
-        # Get list of paid invoices 
-        # invoice_ids = self.env['account.move'].search([('partner_id', '=', self.partner_id.id), ('state', '=', 'posted'), ('move_type', '!=', 'entry')])
-        # paid_invoices = invoice_ids.filtered(lambda x: x.payment_state == 'paid')
-        # Get the product ids from the paid invoices
-        # for invoice in invoice_ids:
-        #     for line in invoice.invoice_line_ids:
-        #         medicines.append(line.product_id.id)
-        
-        for line in self.prescriptions.prescription_line:
-            # push the list of the drugs the patient is taken into a list
-            medicines.append(line.medicine_id.name.id)
-        unique_medications = list(set(medicines))
-        medication_products = self.env["product.product"].browse(unique_medications)
-        for medicine in medication_products:
-            prescription_line = self.get_prescription_details(medicine)
-            prescription_order = self.env['medical.prescription.order'].sudo().search([("id","=", prescription_line.name.id)])
-            vals = {
-                    "patient_id": self.id,
-                    "medicine_id": medicine.id,
-                    "prescription_id": prescription_order.id,
-                    "prescription_line_id": prescription_line.id,
-                    "prescription_date": prescription_order.prescription_date
-                }
-            medication_list +=  [(0,0, vals)]
-        
-        self.update({ 'medication_list_ids' : [(5, _, _)]})
-        self.update({ 'medication_list_ids' : medication_list})
+    def _compute_medication_list(self):
+        for rec in self:
+            medication_list, medicines = [], []
+            # Get list of paid invoices 
+            # invoice_ids = self.env['account.move'].search([('partner_id', '=', self.partner_id.id), ('state', '=', 'posted'), ('move_type', '!=', 'entry')])
+            # paid_invoices = invoice_ids.filtered(lambda x: x.payment_state == 'paid')
+            # Get the product ids from the paid invoices
+            # for invoice in invoice_ids:
+            #     for line in invoice.invoice_line_ids:
+            #         medicines.append(line.product_id.id)
+            
+            for line in rec.prescriptions.prescription_line:
+                # push the list of the drugs the patient is taken into a list
+                medicines.append(line.medicine_id.name.id)
+            unique_medications = list(set(medicines))
+            medication_products = self.env["product.product"].browse(unique_medications)
+            for medicine in medication_products:
+                prescription_line = self.get_prescription_details(medicine)
+                prescription_order = self.env['medical.prescription.order'].sudo().search([("id","=", prescription_line.name.id)])
+                vals = {
+                        "patient_id": self.id,
+                        "medicine_id": medicine.id,
+                        "prescription_id": prescription_order.id,
+                        "prescription_line_id": prescription_line.id,
+                        "prescription_date": prescription_order.prescription_date
+                    }
+                medication_list +=  [(0,0, vals)]
+            
+            rec.update({ 'medication_list_ids' : [(5, _, _)]})
+            rec.update({ 'medication_list_ids' : medication_list})
         
 
     def get_prescription_details(self, medicine_product):
