@@ -744,7 +744,6 @@ class MedicalPatient(models.Model):
     def _compute_medication_list(self):
         for rec in self:
             medication_list, medicines = [], []
-            rec.medication_list_ids.unlink()
             for line in rec.prescriptions.prescription_line:
                 # push the list of the drugs the patient is taken into a list
                 medicines.append(line.medicine_id.name.id)
@@ -753,14 +752,22 @@ class MedicalPatient(models.Model):
             for medicine in medication_products:
                 prescription_line = self.get_prescription_details(medicine)
                 prescription_order = self.env['medical.prescription.order'].sudo().search([("id","=", prescription_line.name.id)])
-                medication_list +=  [(0,0, {
-                    "patient_id": self.id,
-                    "medicine_id": medicine.id,
-                    "prescription_id": prescription_order.id,
-                    "prescription_line_id": prescription_line.id,
-                    "prescription_date": prescription_order.prescription_date
-                })]
-            rec.medication_list_ids = medication_list
+                vals = {
+                        "patient_id": self.id,
+                        "medicine_id": medicine.id,
+                        "prescription_id": prescription_order.id,
+                        "prescription_line_id": prescription_line.id,
+                        "prescription_date": prescription_order.prescription_date
+                    }
+                # if medication exists, update the values else create a new record
+                medication_exists = rec.medication_list_ids.filtered(lambda x: x.medicine_id == medicine.id)
+                if medication_exists:
+                    medication_exists.write(vals)
+                else:
+                    medication_list +=  [(0,0, vals)]
+                
+            if medication_list:
+                rec.medication_list_ids = medication_list
             
 
     def get_prescription_details(self, medicine_product):
