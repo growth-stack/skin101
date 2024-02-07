@@ -751,21 +751,22 @@ class MedicalPatient(models.Model):
         "invoice_ids",
         "invoice_ids.state", 
         "invoice_ids.payment_state", 
-        "invoice_ids.invoice_line_ids"
+        "invoice_ids.invoice_line_ids",
+        "prescriptions.prescription_line"
     )
     def _onchange_prescriptions(self):
         medication_list, medicines = [], []
         # Get list of paid invoices 
-        invoice_ids = self.env['account.move'].search([('partner_id', '=', self.partner_id.id), ('state', '=', 'posted'), ('move_type', '!=', 'entry')])
+        # invoice_ids = self.env['account.move'].search([('partner_id', '=', self.partner_id.id), ('state', '=', 'posted'), ('move_type', '!=', 'entry')])
         # paid_invoices = invoice_ids.filtered(lambda x: x.payment_state == 'paid')
         # Get the product ids from the paid invoices
-        for invoice in invoice_ids:
-            for line in invoice.invoice_line_ids:
-                medicines.append(line.product_id.id)
+        # for invoice in invoice_ids:
+        #     for line in invoice.invoice_line_ids:
+        #         medicines.append(line.product_id.id)
         
-        # for line in self.prescriptions.prescription_line:
-        #     # push the list of the drugs the patient is taken into a list
-        #     medicines.append(line.medicine_id.name.id)
+        for line in self.prescriptions.prescription_line:
+            # push the list of the drugs the patient is taken into a list
+            medicines.append(line.medicine_id.name.id)
         unique_medications = list(set(medicines))
         medication_products = self.env["product.product"].browse(unique_medications)
         for medicine in medication_products:
