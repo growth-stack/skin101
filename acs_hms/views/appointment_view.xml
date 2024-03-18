@@ -344,10 +344,11 @@
         <field name="model">hms.appointment</field>
         <field name="type">calendar</field>
         <field name="arch" type="xml">
-            <calendar string="Appointments" color="state" date_start="date">
+            <calendar string="Appointments" color="state" date_start="date" event_open_popup="true" mode="month">
                 <field name="physician_id"/>
-                <field name="patient_id"/>
+                <field name="patient_id" />
                 <field name="appointment_type"/>
+                <field name="state" filters="1" write_field="state"/>
             </calendar>
         </field>
     </record>
