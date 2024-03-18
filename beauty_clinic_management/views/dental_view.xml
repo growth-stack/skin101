@@ -101,7 +101,7 @@
             <field name="model">medical.appointment</field>
             <field name="arch" type="xml">
                 <calendar js_class="beauty_calendar" string="Appointments" color="state" date_start="appointment_sdate"
-                          date_stop="appointment_edate" event_open_popup="true" mode="day">
+                          date_stop="appointment_edate" event_open_popup="true" mode="month">
                     <field name="patient"/>
                     <field name="doctor"/>
                     <field name="mobile"/>
