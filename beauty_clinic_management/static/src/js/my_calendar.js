@@ -314,7 +314,7 @@ patch(CalendarCommonRenderer.prototype, 'calendar_commCalendarRenderer', {
                     "width": "100px",
                     "padding-top": "0px",
                     "margin-top": 0 + '%',
-                    "background-color": "lightpink",
+                    // "background-color": "lightpink",
                    
                                     
                 })
@@ -475,19 +475,19 @@ patch(CalendarCommonRenderer.prototype, 'calendar_commCalendarRenderer', {
                                     $(ge).css({
                                         "padding-top": "0px",
                                         "width": "90px",
-                                        "background-color": "lightpink",
+                                        // "background-color": "lightpink",
                                         "margin-left": res.index * 260 + 'px',
                                         
                                     })
                                     if(res.patient){
-                                        $(ge).find(".o_event_title")[0].innerText = res.patient
+                                        $(ge).find(".o_event_title")[0].innerText = res.patient  + "\n" + res.services
                                         console.log('===================patientttttttttttt===' , res.patient , $(ge).find(".o_event_title")[0].innerText , doctor_id)
                                     }
 
                                 }
                                 else{
                                     if(res.patient){
-                                        $(ge).find(".o_event_title")[0].innerText = res.patient
+                                        $(ge).find(".o_event_title")[0].innerText = res.patient  + "\n" + res.services
                                     }
                                 }
                             })

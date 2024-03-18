@@ -630,6 +630,8 @@ class MedicalPatient(models.Model):
 
     partner_id = fields.Many2one('res.partner', 'Patient', required="1",
                                  domain=[('is_patient', '=', True), ('is_person', '=', True)], help="Patient Name")
+    signature_count = fields.Integer(related='partner_id.signature_count', store=True)
+    is_company = fields.Boolean(related='partner_id.is_company', store=True)
     patient_id = fields.Char('Patient ID', size=64,
                              help="Patient Identifier provided by the Health Center. Is not the patient id from the partner form",
                              default=lambda self: _('New'))
@@ -656,6 +658,7 @@ class MedicalPatient(models.Model):
                               store=True)
     medications = fields.One2many('medical.patient.medication', 'name', 'Medications')
     prescriptions = fields.One2many('medical.prescription.order', 'name', "Prescriptions")
+    medication_list_ids = fields.One2many('medical.medication.list', 'patient_id', 'Medication List')
     diseases_ids = fields.One2many('medical.patient.disease', 'name', 'Diseases')
     critical_info = fields.Text(compute='_medical_alert', string='Medical Alert',
                                 help="Write any important information on the patient's disease, surgeries, allergies, ...")
@@ -735,6 +738,73 @@ class MedicalPatient(models.Model):
     civil_id = fields.Char('Civil Id')
     family_link = fields.Boolean('Family Link')
     link_partner_id = fields.Many2one('medical.patient', 'Link Partner')
+    invoice_ids = fields.One2many('account.move', 'partner_id', 'Invoices', compute='compute_invoices')
+
+    def compute_invoices(self):
+        for rec in self:
+            rec.invoice_ids = self.env['account.move'].search(
+                [('partner_id', '=', rec.partner_id.id), ('move_type', '!=', 'entry')]
+            )
+
+    
+    @api.onchange(
+        "prescriptions"
+    )
+    def _onchange_prescriptions(self):
+        medication_list, medicines = [], []
+        # Get list of paid invoices 
+        # invoice_ids = self.env['account.move'].search([('partner_id', '=', self.partner_id.id), ('state', '=', 'posted'), ('move_type', '!=', 'entry')])
+        # paid_invoices = invoice_ids.filtered(lambda x: x.payment_state == 'paid')
+        # Get the product ids from the paid invoices
+        # for invoice in invoice_ids:
+        #     for line in invoice.invoice_line_ids:
+        #         medicines.append(line.product_id.id)
+        
+        for line in self.prescriptions.prescription_line:
+            # push the list of the drugs the patient is taken into a list
+            medicines.append(line.medicine_id.name.id)
+        unique_medications = list(set(medicines))
+        medication_products = self.env["product.product"].browse(unique_medications)
+        for medicine in medication_products:
+            prescription_line = self.get_prescription_details(medicine)
+            prescription_order = self.env['medical.prescription.order'].sudo().search([("id","=", prescription_line.name.id)])
+            vals = {
+                    "patient_id": self.id,
+                    "medicine_id": medicine.id,
+                    "prescription_id": prescription_order.id,
+                    "prescription_line_id": prescription_line.id,
+                    "prescription_date": prescription_order.prescription_date
+                }
+            medication_list +=  [(0,0, vals)]
+        
+        self.update({ 'medication_list_ids' : [(5, _, _)]})
+        self.update({ 'medication_list_ids' : medication_list})
+        
+
+    def get_prescription_details(self, medicine_product):
+        # Returns the details of the latest prescription for a specific drug
+        print("medicine product", medicine_product)
+        latest_medication = self.env['medical.medicine.prag'].sudo().search([("name","=",medicine_product.id)], limit = 1)
+        prescription_line = self.env['medical.prescription.line'].sudo().search([("medicine_id","=", latest_medication.id)], limit=1)
+        return prescription_line
+        
+        
+        
+    def open_signatures(self):
+        self.ensure_one()
+        request_ids = self.env['sign.request.item'].search([('partner_id', '=', self.partner_id.id)]).mapped('sign_request_id')
+        return {
+            'type': 'ir.actions.act_window',
+            'name': _('Signature(s)'),
+            'view_mode': 'kanban,tree,form',
+            'res_model': 'sign.request',
+            'domain': [('id', 'in', request_ids.ids)],
+            'context': {
+                'search_default_reference': self.partner_id.name,
+                'search_default_signed': 1,
+                'search_default_in_progress': 1,
+            },
+        }
 
     def blockpatient(self):
         self.active = False
@@ -1454,9 +1524,9 @@ class MedicalAppointment(models.Model):
     def get_data(self, doctor_id, event_name, index):
         record = self.search([('name', '=', event_name), ('doctor', '=', doctor_id)], limit=1)
         if record:
-            return {'index': index, 'patient': record.patient.partner_id.name}
+            return {'index': index, 'patient': record.patient.partner_id.name, "services": ",".join(record.services_ids.mapped("name"))}
         else:
-            return {'index': 0, 'patient': record.patient.partner_id.name}
+            return {'index': 0, 'patient': record.patient.partner_id.name, "services": ",".join(record.services_ids.mapped("name"))}
 
     @api.model
     def _get_default_doctor(self):
@@ -2015,6 +2085,34 @@ class MedicalPrescriptionLine(models.Model):
         ('wr', 'when required'),
     ], 'Duration Unit', default='days', )
 
+class MedicalPrescriptionLine(models.Model):
+    _name = "medical.medication.list"
+    _description = "A persistent list of medications taken by a patient"
+
+    patient_id = fields.Many2one('medical.patient', 'Patient', help="Patient", required=True, )
+    medicine_id = fields.Many2one('product.product', 'Medicine', required=True, ondelete="cascade")
+    prescription_id = fields.Many2one('medical.prescription.order', 'Prescription ID')
+    prescription_line_id = fields.Many2one("medical.prescription.line")
+    prescription_date = fields.Datetime(related="prescription_id.prescription_date")
+    # quantity = fields.Integer('Quantity', default=1)
+    # note = fields.Char('Note', size=128, help='Short comment on the specific drug')
+    # dose = fields.Float('Dose', help="Amount of medication (eg, 250 mg ) each time the patient takes it")
+    # dose_unit = fields.Many2one('medical.dose.unit', 'Dose Unit', help="Unit of measure for the medication to be taken")
+    # form = fields.Many2one('medical.drug.form', 'Form', help="Drug form, such as tablet or gel")
+    # qty = fields.Integer('x', default=1, help="Quantity of units (eg, 2 capsules) of the medicament")
+    # common_dosage = fields.Many2one('medical.medication.dosage', 'Frequency',
+    #                                 help="Common / standard dosage frequency for this medicament")
+    # duration = fields.Integer('Duration',
+    #                           help="Time in between doses the patient must wait (ie, for 1 pill each 8 hours, put here 8 and select 'hours' in the unit field")
+    # duration_period = fields.Selection([
+    #     ('seconds', 'seconds'),
+    #     ('minutes', 'minutes'),
+    #     ('hours', 'hours'),
+    #     ('days', 'days'),
+    #     ('weeks', 'weeks'),
+    #     ('wr', 'when required'),
+    # ], 'Duration Unit', default='days', )
+
 
 # HEALTH CENTER / HOSPITAL INFRASTRUCTURE
 class MedicalHospitalBuilding(models.Model):
@@ -2234,6 +2332,7 @@ class patient_complaint(models.Model):
     complaint_date = fields.Datetime('Complaint Date')
     complaint = fields.Text('Complaint')
     action_ta = fields.Text('Action Taken Against')
+    legacy_appointment_no = fields.Char('Legacy Appointment No', help="Used for data migration")
 
 
 class ir_attachment(models.Model):

@@ -140,3 +140,7 @@ access_medical_notes_message,access_medical_notes_message,model_medical_notes_me
 
 access_face_order_line,access_face_order_line,model_face_order_line,,1,1,1,1
 access_body_order_line,access_body_order_line,model_body_order_line,,1,1,1,1
+access_wizard_migration_user,wizard.migration.user,model_wizard_migration,base.group_user,1,1,1,1
+access_medical_medication_list_user,access.medical.medication.list,model_medical_medication_list,base.group_user,1,1,1,1
+
+

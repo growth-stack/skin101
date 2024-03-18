@@ -46,7 +46,7 @@ class AccountInvoice(models.Model):
     dentist = fields.Many2one('medical.physician', 'Dentist')
     insurance_company = fields.Many2one('res.partner', 'Insurance Company',
                                         domain=[('is_insurance_company', '=', True)])
-    patient_id = fields.Many2one('res.partner', 'Patient')
+    patient_id = fields.Many2one('medical.patient', 'Patient')
     appointment_id = fields.Many2one('medical.appointment', 'Appointment')
 
     def financial_agreement_action_inherit1(self):
