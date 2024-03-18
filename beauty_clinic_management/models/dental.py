@@ -1631,6 +1631,8 @@ class MedicalAppointment(models.Model):
                                      selection=[('invoiced', 'Invoiced'), ('payment_registered', 'Payment Registered')])
     is_invoice_state = fields.Boolean(default=False)
     is_register_payment = fields.Boolean(default=False)
+    appointment_type = fields.Selection([('virtual','Virtual Appointment'),('in-person','In-person Appointment')],'Appointment Type', default='in-person')
+
 
     @api.model
     def _name_get_fnc(self):
