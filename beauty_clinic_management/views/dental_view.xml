@@ -117,6 +117,7 @@
                     <field name="is_register_payment" invisible="1"/>
                     <field name="invoice_state" attrs="{'invisible':[('is_invoice_state','=',False)]}"/>
                     <field name="invoice_id" invisible="1"/>
+                    <field name="appointment_type"/>
                     <field name="state" filters="1" write_field="state"/>
                 </calendar>
             </field>
