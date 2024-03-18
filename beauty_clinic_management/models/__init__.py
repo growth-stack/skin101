@@ -5,3 +5,4 @@ from . import financing
 from . import stock_alert
 from . import dental_invoice
 from . import doctor_slot
+from . import res_partner

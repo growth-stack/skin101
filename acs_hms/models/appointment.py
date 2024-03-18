@@ -165,6 +165,7 @@ class Appointment(models.Model):
     pause_date_end = fields.Datetime('Pause end Date', states=READONLY_STATES)
     pause_duration = fields.Float('Paused Time', readonly=True)
     prescription_ids = fields.One2many('prescription.order', 'appointment_id', 'Prescriptions')
+    appointment_type = fields.Selection([('virtual','Virtual Appointment'),('in-person','In-person Appointment')],'Appointment Type', default='in-person')
 
     @api.model
     def create(self, values):
@@ -185,29 +186,28 @@ class Appointment(models.Model):
         '''
         This function opens a window to compose an email, with the template message loaded by default
         '''
-        self.ensure_one()
-        ir_model_data = self.env['ir.model.data']
+        self.ensure_one()  # Ensure we're working with a single record
         try:
-            template_id = ir_model_data.get_object_reference('acs_hms', 'acs_appointment_email')[1]
+            template_id = self.env.ref('acs_hms.acs_appointment_email')
         except ValueError:
             template_id = False
         try:
-            compose_form_id = ir_model_data.get_object_reference('mail', 'email_compose_message_wizard_form')[1]
+            compose_form_id = self.env.ref('mail.email_compose_message_wizard_form')
         except ValueError:
             compose_form_id = False
         ctx = {
             'default_model': 'hms.appointment',
             'default_res_id': self.ids[0],
             'default_use_template': bool(template_id),
-            'default_template_id': template_id,
+            'default_template_id': template_id.id if template_id else False,
             'default_composition_mode': 'comment',
             'force_email': True
         }
         return {
             'type': 'ir.actions.act_window',
             'res_model': 'mail.compose.message',
-            'views': [(compose_form_id, 'form')],
-            'view_id': compose_form_id,
+            'views': [(compose_form_id.id, 'form')],
+            'view_id': compose_form_id.id,
             'target': 'new',
             'context': ctx,
         }

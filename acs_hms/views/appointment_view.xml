@@ -142,6 +142,7 @@
                 <field name="purpose_id"/>
                 <field name="cabin_id"/>
                 <field name="patient_id"/>
+                <field name="appointment_type"/>
                 <field name="date"/>
                 <field name="department_id" groups="acs_hms.group_allow_multi_department"/>
                 <field name="physician_id"/>
@@ -203,6 +204,7 @@
                         <group>
                             
                             <field name="patient_id"/>
+                            <field name="appointment_type"/>
                             <field name="age"/>
                             <field name="department_id" groups="acs_hms.group_allow_multi_department"/>
                             <field name="physician_id" required="1"/>
@@ -327,6 +329,7 @@
                 <filter name="today" string="Today" domain="[('date', '&gt;=', time.strftime('%Y-%m-%d 00:00:00')),('date', '&lt;=', time.strftime('%Y-%m-%d 23:59:59'))]"/>
                 <filter name="my_app" string="My Appointments" domain="[('physician_id.user_id', '=',uid)]"/>
                 <field name="ref_physician_id"/>
+                <field name="appointment_type"/>
                 <separator/>
                 <filter name="done" string="Not Done" domain="[('state','!=','done')]"/>
                 <group expand="0" string="Group By...">
@@ -341,9 +344,11 @@
         <field name="model">hms.appointment</field>
         <field name="type">calendar</field>
         <field name="arch" type="xml">
-            <calendar string="Appointments" color="department_id" date_start="date">
+            <calendar string="Appointments" color="state" date_start="date" event_open_popup="true" mode="month">
                 <field name="physician_id"/>
-                <field name="patient_id"/>
+                <field name="patient_id" />
+                <field name="appointment_type"/>
+                <field name="state" filters="1" write_field="state"/>
             </calendar>
         </field>
     </record>
@@ -356,6 +361,7 @@
                 <field name="date" type="row"/>
                 <field name="physician_id" type="row"/>
                 <field name="patient_id" type="row"/>
+                <field name="appointment_type" type="row"/>
                 <field name="waiting_duration" type="measure"/>
                 <field name="appointment_duration" type="measure"/>
             </pivot>
