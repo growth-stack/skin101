@@ -14,34 +14,34 @@ odoo.define('beauty_clinic_management.calendar', function(require) {
     var session = require('web.session');
     var CalendarPopover = require('web.CalendarPopover');
 
+    // CalendarView (Day, Week, Month Scales)
     CalendarView.include({
         init: function () {
-
-            this._super.apply(this,arguments);
-            console.log("===this.controllerParams.context=====init=====init==",this.controllerParams.context)
-            var is_beauty_calender = this.fieldsView.base_model
-            if(is_beauty_calender && is_beauty_calender=='medical.appointment'){
-                console.log("===this.controllerParams.context=====init=====init==",this.controllerParams.context)
-                this.appointment_sdate = this.controllerParams.context.default_appointment_sdate
-                if(this.appointment_sdate){
+            this._super.apply(this, arguments);
+            var is_beauty_calendar = this.fieldsView.base_model;
+            if (is_beauty_calendar === 'medical.appointment') {
+                this.scales = ["day", "week", "month"];
+                this.appointment_sdate = this.controllerParams.context.default_appointment_sdate;
+                if (this.appointment_sdate) {
                     var dateObject = new Date(this.appointment_sdate);
                     this.loadParams.initialDate = moment(dateObject);
                 }
             }
         }
-    })
+    });
 
+    // CalendarController (Model-Specific Behavior)
     CalendarController.include({
         init: function () {
-            console.log("==22====init=====init==")
-            this._super.apply(this,arguments);
-            var is_beauty_calender = this.modelName
-            if(is_beauty_calender && is_beauty_calender=='medical.appointment'){
-                this.scales = ["day","week","month"]
-                this.appointment_sdate = this.context.default_appointment_sdate
+            this._super.apply(this, arguments);
+            var is_beauty_calendar = this.modelName;
+            if (is_beauty_calendar === 'medical.appointment') {
+                this.scales = ["day", "week", "month"];
+                this.appointment_sdate = this.context.default_appointment_sdate;
             }
-        },
+        }
     });
+
 
     var CalendarPopoverInclude = CalendarPopover.include({
         events: _.extend({}, CalendarPopover.prototype.events, {
