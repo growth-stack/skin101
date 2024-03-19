@@ -465,13 +465,12 @@ patch(CalendarCommonRenderer.prototype, 'calendar_commCalendarRenderer', {
                         console.log("==============result========doctor_iddoctor_iddoctor_id=result=========",result[j] , doctor_id)
                         _.each(gridEvent, function(ge, gi){
                             var eventName = $(ge).find(".o_event_title")[0].innerText;
-                            var appointmentType = $(ge).data('appointment-type');
                             rpc.query({
                                 model: 'medical.appointment',
                                 method: 'get_data',
-                                args: [false, doctor_id, eventName, j, appointmentType]
+                                args: [false, doctor_id, eventName, j]
                             }).then(function(res){
-                                console.log("==============res==Appoint=======",res.index , res.patient , eventName, appointmentType)
+                                console.log("==============res==Appoint=======",res.index , res.patient , eventName, res.appointment_type)
                                 if (res.index >= 1) {
                                     $(ge).css({
                                         "padding-top": "0px",
