@@ -465,10 +465,11 @@ patch(CalendarCommonRenderer.prototype, 'calendar_commCalendarRenderer', {
                         console.log("==============result========doctor_iddoctor_iddoctor_id=result=========",result[j] , doctor_id)
                         _.each(gridEvent, function(ge, gi){
                             var eventName = $(ge).find(".o_event_title")[0].innerText;
+                            var appointmentType = $(ge).data('appointment-type');
                             rpc.query({
                                 model: 'medical.appointment',
                                 method: 'get_data',
-                                args: [false, doctor_id, eventName, j]
+                                args: [false, doctor_id, eventName, j, appointmentType]
                             }).then(function(res){
                                 console.log("==============res==res=======",res.index , res.patient , eventName)
                                 if (res.index >= 1) {
@@ -480,14 +481,14 @@ patch(CalendarCommonRenderer.prototype, 'calendar_commCalendarRenderer', {
                                         
                                     })
                                     if(res.patient){
-                                        $(ge).find(".o_event_title")[0].innerText = res.patient  + "\n" + res.services
+                                        $(ge).find(".o_event_title")[0].innerText = res.patient  + "\n" + res.services + "\n" + res.appointment_type
                                         console.log('===================patientttttttttttt===' , res.patient , $(ge).find(".o_event_title")[0].innerText , doctor_id)
                                     }
 
                                 }
                                 else{
                                     if(res.patient){
-                                        $(ge).find(".o_event_title")[0].innerText = res.patient  + "\n" + res.services
+                                        $(ge).find(".o_event_title")[0].innerText = res.patient  + "\n" + res.services + "\n" + res.appointment_type
                                     }
                                 }
                             })
