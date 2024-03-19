@@ -100,10 +100,10 @@
             <field name="name">medical.appointment.calendar</field>
             <field name="model">medical.appointment</field>
             <field name="arch" type="xml">
-                <calendar js_class="beauty_calendar" string="Appointments" color="state" date_start="appointment_sdate"
-                          date_stop="appointment_edate" event_open_popup="true" mode="month">
+                <calendar js_class="beauty_calendar" string="Appointments" color="state" date_start="appointment_sdate" date_stop="appointment_edate" event_open_popup="true" mode="month">
                     <field name="patient"/>
                     <field name="doctor"/>
+                    <field name="appointment_type"/>
                     <field name="mobile"/>
                     <field name="civil_id"/>
                     <field name="services_ids"/>
@@ -117,7 +117,6 @@
                     <field name="is_register_payment" invisible="1"/>
                     <field name="invoice_state" attrs="{'invisible':[('is_invoice_state','=',False)]}"/>
                     <field name="invoice_id" invisible="1"/>
-                    <field name="appointment_type"/>
                     <field name="state" filters="1" write_field="state"/>
                 </calendar>
             </field>

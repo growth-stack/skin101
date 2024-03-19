@@ -37,7 +37,7 @@ odoo.define('beauty_clinic_management.calendar', function(require) {
             this._super.apply(this,arguments);
             var is_beauty_calender = this.modelName
             if(is_beauty_calender && is_beauty_calender=='medical.appointment'){
-                this.scales = ["day"]
+                this.scales = ["day","week","month"]
                 this.appointment_sdate = this.context.default_appointment_sdate
             }
         },
