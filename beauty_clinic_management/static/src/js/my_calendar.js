@@ -472,13 +472,13 @@ patch(CalendarCommonRenderer.prototype, 'calendar_commCalendarRenderer', {
                             }).then(function(res){
                                 console.log("==============res==Appoint=======",res.index , res.patient , eventName, res.appointment_type)
                                 if (res.index >= 1) {
-                                    // $(ge).css({
-                                    //     "padding-top": "0px",
-                                    //     "width": "90px",
-                                    //     // "background-color": "lightpink",
-                                    //     "margin-left": res.index * 260 + 'px',
+                                    $(ge).css({
+                                        "padding-top": "0px",
+                                        "width": "90px",
+                                        // "background-color": "lightpink",
+                                        "margin-left": res.index * 260 + 'px',
                                         
-                                    // })
+                                    })
                                     if(res.patient){
                                         $(ge).find(".o_event_title")[0].innerText = res.patient  + "\n" + res.services + "\n" + res.appointment_type
                                         console.log('===================patient app_type===' , res.patient , $(ge).find(".o_event_title")[0].innerText ,res.appointment_type, doctor_id)
