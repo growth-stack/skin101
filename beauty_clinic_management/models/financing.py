@@ -25,6 +25,11 @@ class FinancingAgreement(models.Model):
     expiry_year =  fields.Char('Expiry Year')
     is_credit_card =  fields.Boolean('Credit Card')
     credit_card_number =  fields.Char('Credit Card Number')
+    user_company_id = fields.Many2one(
+        'res.company',
+        string='Company',
+        default=lambda self: self.env.company
+    )
     
     
     
@@ -79,4 +84,9 @@ class PaymentSchedule(models.Model):
     date =  fields.Date('Date')
     amount_to_be_paid =  fields.Float('Amount to be paid')
     financing_id =  fields.Many2one('financing.agreement','Financing Agreement')
+    user_company_id = fields.Many2one(
+        'res.company',
+        string='Company',
+        default=lambda self: self.env.company
+    )
 

@@ -25,6 +25,11 @@ class DoctorSlot(models.Model):
     ], string='Week Day', required=True)
     start_hour = fields.Float('Starting Hour')
     end_hour = fields.Float('Ending Hour')
+    user_company_id = fields.Many2one(
+        'res.company',
+        string='Company',
+        default=lambda self: self.env.company
+    )
 
     @api.model
     def get_doctors_slot(self, target_date=False, doctor=False):
@@ -99,6 +104,11 @@ class AppoinmentDuration(models.Model):
 
     duration_name = fields.Integer(string='Duration')
     appointment_id = fields.Many2one('medical.appointment', string='Appointment')
+    user_company_id = fields.Many2one(
+        'res.company',
+        string='Company',
+        default=lambda self: self.env.company
+    )
 
 
 class BlockReason(models.Model):
@@ -107,6 +117,11 @@ class BlockReason(models.Model):
 
     name = fields.Text('Reason')
     patient_id = fields.Many2one('medical.patient')
+    user_company_id = fields.Many2one(
+        'res.company',
+        string='Company',
+        default=lambda self: self.env.company
+    )
 
     def action_done(self):
         self.patient_id.block_reason = self.name
