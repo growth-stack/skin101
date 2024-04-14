@@ -28,5 +28,171 @@
     </record>
 
     </data>
+	<data>
+		
+		<record model="ir.rule" id="record_restricted_company_rule_model1">
+			<field name="name">Restricted Record: multi-company</field>
+			<field name="model_id" ref="model_duration_duration"/>
+			<field name="global" eval="True"/>
+			<field name="domain_force">
+				[('user_company_id', 'in', company_ids)]
+			</field>
+		</record>
+		
+		<record model="ir.rule" id="record_restricted_company_rule_model2">
+			<field name="name">Restricted Record: multi-company</field>
+			<field name="model_id" ref="model_doctor_slot"/>
+			<field name="global" eval="True"/>
+			<field name="domain_force">
+				[('user_company_id', 'in', company_ids)]
+			</field>
+		</record>
+
+		<record model="ir.rule" id="record_restricted_company_rule_model3">
+			<field name="name">Restricted Record: multi-company</field>
+			<field name="model_id" ref="model_block_reason"/>
+			<field name="global" eval="True"/>
+			<field name="domain_force">
+				[('user_company_id', 'in', company_ids)]
+			</field>
+		</record>
+
+		<record model="ir.rule" id="record_restricted_company_rule_model4">
+			<field name="name">Restricted Record: multi-company</field>
+			<field name="model_id" ref="model_financing_agreement"/>
+			<field name="global" eval="True"/>
+			<field name="domain_force">
+				[('user_company_id', 'in', company_ids)]
+			</field>
+		</record>
+
+		<record model="ir.rule" id="record_restricted_company_rule_model5">
+			<field name="name">Restricted Record: multi-company</field>
+			<field name="model_id" ref="model_account_move"/>
+			<field name="global" eval="True"/>
+			<field name="domain_force">
+				[('user_company_id', 'in', company_ids)]
+			</field>
+		</record>
+
+		<record model="ir.rule" id="record_restricted_company_rule_model6">
+			<field name="name">Restricted Record: multi-company</field>
+			<field name="model_id" ref="model_dental_insurance_claim_management"/>
+			<field name="global" eval="True"/>
+			<field name="domain_force">
+				[('user_company_id', 'in', company_ids)]
+			</field>
+		</record>
+
+		<!-- <record model="ir.rule" id="record_restricted_company_rule_model7">
+			<field name="name">Restricted Record: multi-company</field>
+			<field name="model_id" ref="model_medical_insurance_plan"/>
+			<field name="global" eval="True"/>
+			<field name="domain_force">
+				[('user_company_id', 'in', company_ids)]
+			</field>
+		</record> -->
+
+		<!-- <record model="ir.rule" id="record_restricted_company_rule_model8">
+			<field name="name">Restricted Record: multi-company</field>
+			<field name="model_id" ref="model_medical_insurance"/>
+			<field name="global" eval="True"/>
+			<field name="domain_force">
+				[('user_company_id', 'in', company_ids)]
+			</field>
+		</record> -->
+
+		<!-- <record model="ir.rule" id="record_restricted_company_rule_model9">
+			<field name="name">Restricted Record: multi-company</field>
+			<field name="model_id" ref="model_res_partner"/>
+			<field name="global" eval="True"/>
+			<field name="domain_force">
+				[('company_id', 'in', company_ids)]
+			</field>
+		</record> -->
+
+		<!-- <record model="ir.rule" id="record_restricted_company_rule_model10">
+			<field name="name">Restricted Record: multi-company</field>
+			<field name="model_id" ref="model_product_product"/>
+			<field name="global" eval="True"/>
+			<field name="domain_force">
+				[('user_company_id', 'in', company_ids)]
+			</field>
+		</record> -->
+
+		<!-- <record model="ir.rule" id="record_restricted_company_rule_model11">
+			<field name="name">Restricted Record: multi-company</field>
+			<field name="model_id" ref="model_medical_pathology_category"/>
+			<field name="global" eval="True"/>
+			<field name="domain_force">
+				[('user_company_id', 'in', company_ids)]
+			</field>
+		</record> -->
+
+		<!-- <record model="ir.rule" id="record_restricted_company_rule_model12">
+			<field name="name">Restricted Record: multi-company</field>
+			<field name="model_id" ref="model_medical_pathology"/>
+			<field name="global" eval="True"/>
+			<field name="domain_force">
+				[('user_company_id', 'in', company_ids)]
+			</field>
+		</record> -->
+
+		<record model="ir.rule" id="record_restricted_company_rule_model13">
+			<field name="name">Restricted Record: multi-company</field>
+			<field name="model_id" ref="model_medical_patient"/>
+			<field name="global" eval="True"/>
+			<field name="domain_force">
+				[('user_company_id', 'in', company_ids)]
+			</field>
+		</record>
+
+		<record model="ir.rule" id="record_restricted_company_rule_model14">
+			<field name="name">Restricted Record: multi-company</field>
+			<field name="model_id" ref="model_medical_appointment"/>
+			<field name="global" eval="True"/>
+			<field name="domain_force">
+				[('user_company_id', 'in', company_ids)]
+			</field>
+		</record>
+
+		<record model="ir.rule" id="record_restricted_company_rule_model15">
+			<field name="name">Restricted Record: multi-company</field>
+			<field name="model_id" ref="model_payment_schedule"/>
+			<field name="global" eval="True"/>
+			<field name="domain_force">
+				[('user_company_id', 'in', company_ids)]
+			</field>
+		</record>
+
+		<record model="ir.rule" id="record_restricted_company_rule_model16">
+			<field name="name">Restricted Record: multi-company</field>
+			<field name="model_id" ref="model_patient_complaint"/>
+			<field name="global" eval="True"/>
+			<field name="domain_force">
+				[('user_company_id', 'in', company_ids)]
+			</field>
+		</record>
+
+		<record model="ir.rule" id="record_restricted_company_rule_model17">
+			<field name="name">Restricted Record: multi-company</field>
+			<field name="model_id" ref="model_medical_prescription_order"/>
+			<field name="global" eval="True"/>
+			<field name="domain_force">
+				[('user_company_id', 'in', company_ids)]
+			</field>
+		</record>
+
+		<record model="ir.rule" id="record_restricted_company_rule_model18">
+			<field name="name">Restricted Record: multi-company</field>
+			<field name="model_id" ref="model_medical_physician"/>
+			<field name="global" eval="True"/>
+			<field name="domain_force">
+				[('user_company_id', 'in', company_ids)]
+			</field>
+		</record>
+
+	</data>
+		
     
 </odoo>

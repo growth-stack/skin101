@@ -22,6 +22,11 @@ class ClaimManagement(models.Model):
                                         domain="[('is_insurance_company', '=', True)]")
     insurance_policy_card = fields.Char(string='Insurance Policy Card')
     treatment_done = fields.Boolean(string='Treatment Done')
+    user_company_id = fields.Many2one(
+        'res.company',
+        string='Company',
+        default=lambda self: self.env.company
+    )
 
 
 #     ,domain="[('is_patient', '=', True)]"
@@ -47,6 +52,11 @@ class InsurancePlan(models.Model):
                                  domain="[('is_insurance_company', '=', '1')]")
     notes = fields.Text('Extra info')
     code = fields.Char(size=64, required=True, index=True)
+    user_company_id = fields.Many2one(
+        'res.company',
+        string='Company',
+        default=lambda self: self.env.company
+    )
 
 
 class MedicalInsurance(models.Model):
@@ -74,6 +84,11 @@ class MedicalInsurance(models.Model):
                             'Insurance Type')
     notes = fields.Text('Extra Info')
     plan_id = fields.Many2one('medical.insurance.plan', 'Plan', help='Insurance company plan')
+    user_company_id = fields.Many2one(
+        'res.company',
+        string='Company',
+        default=lambda self: self.env.company
+    )
 
 
 class Partner(models.Model):
@@ -94,7 +109,11 @@ class Partner(models.Model):
     insurance_ids = fields.One2many('medical.insurance', 'name', "Insurance")
     treatment_id = fields.Many2many('product.product', 'treatment_insurance_company_relation', 'treatment_id',
                                     'insurance_company_id', 'Treatment')
-
+    company_id = fields.Many2one(
+        'res.company',
+        string='Company',
+        default=lambda self: self.env.company
+    )
     _sql_constraints = [
         ('ref_uniq', 'unique (ref)', 'The partner or patient code must be unique')
     ]
@@ -131,6 +150,11 @@ class ProductProduct(models.Model):
     #     insurance_company_ids = fields.One2many('res.partner','treatment_id',string="Insurance Company")
     insurance_company_id = fields.Many2many('res.partner', 'treatment_insurance_company_relation',
                                             'insurance_company_id', 'treatment_id', 'Insurance Company')
+    user_company_id = fields.Many2one(
+        'res.company',
+        string='Company',
+        default=lambda self: self.env.company
+    )
 
     def get_treatment_charge(self):
         return self.lst_price
@@ -175,6 +199,11 @@ class PathologyCategory(models.Model):
     complete_name = fields.Char(compute='_name_get_fnc', string="Name")
     child_ids = fields.One2many('medical.pathology.category', 'parent_id', 'Children Category')
     active = fields.Boolean('Active', default=True, )
+    user_company_id = fields.Many2one(
+        'res.company',
+        string='Company',
+        default=lambda self: self.env.company
+    )
 
 
 class MedicalPathology(models.Model):
@@ -191,7 +220,12 @@ class MedicalPathology(models.Model):
     line_ids = fields.One2many('medical.pathology.group.member', 'name',
                                'Groups', help='Specify the groups this pathology belongs. Some'
                                               ' automated processes act upon the code of the group')
-
+    user_company_id = fields.Many2one(
+        'res.company',
+        string='Company',
+        default=lambda self: self.env.company
+    )
+    
     _sql_constraints = [
         ('code_uniq', 'unique (code)', 'The disease code must be unique')]
 
@@ -404,6 +438,11 @@ class MedicalPhysician(models.Model):
     slot_ids = fields.One2many('doctor.slot', 'doctor_id', 'Availabilities', copy=True)
     active = fields.Boolean('Archive', default=True)
     active_code = fields.Char('ID', default='Test', compute='doctor_active', store=True)
+    user_company_id = fields.Many2one(
+        'res.company',
+        string='Company',
+        default=lambda self: self.env.company
+    )
 
     @api.depends('active_code', 'active')
     def doctor_active(self):
@@ -739,6 +778,11 @@ class MedicalPatient(models.Model):
     family_link = fields.Boolean('Family Link')
     link_partner_id = fields.Many2one('medical.patient', 'Link Partner')
     invoice_ids = fields.One2many('account.move', 'partner_id', 'Invoices', compute='compute_invoices')
+    user_company_id = fields.Many2one(
+        'res.company',
+        string='Company',
+        default=lambda self: self.env.company
+    )
 
     def compute_invoices(self):
         for rec in self:
@@ -1642,6 +1686,11 @@ class MedicalAppointment(models.Model):
     is_invoice_state = fields.Boolean(default=False)
     is_register_payment = fields.Boolean(default=False)
     appointment_type = fields.Selection([('virtual','Virtual Appointment'),('in-person','In-person Appointment')],'Appointment Type', default='in-person')
+    user_company_id = fields.Many2one(
+        'res.company',
+        string='Company',
+        default=lambda self: self.env.company
+    )
 
 
     @api.model
@@ -1990,6 +2039,11 @@ class MedicalPrescriptionOrder(models.Model):
                              'Invoice Status', default='tobe')
     inv_id = fields.Many2one('account.move', 'Invoice', readonly=True)
     pricelist_id = fields.Many2one('product.pricelist', 'Pricelist', required=True)
+    user_company_id = fields.Many2one(
+        'res.company',
+        string='Company',
+        default=lambda self: self.env.company
+    )
 
     _sql_constraints = [
         ('pid1', 'unique (pid1)', 'Prescription must be unique per Appointment'),
@@ -2345,6 +2399,11 @@ class patient_complaint(models.Model):
     complaint = fields.Text('Complaint')
     action_ta = fields.Text('Action Taken Against')
     legacy_appointment_no = fields.Char('Legacy Appointment No', help="Used for data migration")
+    user_company_id = fields.Many2one(
+        'res.company',
+        string='Company',
+        default=lambda self: self.env.company
+    )
 
 
 class ir_attachment(models.Model):

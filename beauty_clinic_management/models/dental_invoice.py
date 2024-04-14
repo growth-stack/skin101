@@ -48,6 +48,11 @@ class AccountInvoice(models.Model):
                                         domain=[('is_insurance_company', '=', True)])
     patient_id = fields.Many2one('medical.patient', 'Patient')
     appointment_id = fields.Many2one('medical.appointment', 'Appointment')
+    user_company_id = fields.Many2one(
+        'res.company',
+        string='Company',
+        default=lambda self: self.env.company
+    )
 
     def financial_agreement_action_inherit1(self):
         finance_id = self.finance_id
