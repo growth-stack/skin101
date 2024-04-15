@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 {
-    'name' : 'Odoo Invoice 2 Delivery Order',
+    'name' : 'Auto Create Delivery Order from Invoice',
     'version' : '16.0.1.0.0',
     'author' : 'Ohia Ikenna Markhenry',
     'category': 'Accounting',
     'website': 'https://bitlect.net',
     'price': 15.99,
     'currency': 'USD',
-    'summary': 'Create Delivery Order from Invoice',
+    'summary': 'Odoo module that automatically creates delivery orders from invoices. When an invoice is validated, it will create stock pickings and moves for the products in the invoice lines',
     'description': """
         """,
     'depends' : ['base','account','stock','sale'],
