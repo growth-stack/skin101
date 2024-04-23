@@ -471,7 +471,7 @@ patch(CalendarCommonRenderer.prototype, 'calendar_commCalendarRenderer', {
                             console.log("==============res==Appoint=======", res.index, res.patient, eventName, res.appointment_type);
                             $(ge).css({
                                 "padding-top": "0px",
-                                "width": "17%", // Fill the width of the selected time
+                                "width": "3%", // Fill the width of the selected time
                                 "margin-left": res.index >= 1 ? res.index * 260 + 'px' : '0px',
                             });
                             if (res.patient) {
