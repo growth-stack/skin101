@@ -458,30 +458,44 @@ patch(CalendarCommonRenderer.prototype, 'calendar_commCalendarRenderer', {
                     }
                 })
 
-                for (let j = 0; j < result.length; j++) {
-                    let doctor_id = result[j].id;
-                    console.log("==============result========doctor_iddoctor_iddoctor_id=result=========", result[j], doctor_id);
-                    _.each(gridEvent, function(ge, gi) {
-                        let eventName = $(ge).find(".o_event_title")[0].innerText;
-                        rpc.query({
-                            model: 'medical.appointment',
-                            method: 'get_data',
-                            args: [false, doctor_id, eventName, j]
-                        }).then(function(res) {
-                            console.log("==============res==Appoint=======", res.index, res.patient, eventName, res.appointment_type);
-                            $(ge).css({
-                                "padding-top": "0px",
-                                "width": "6%", // Fill the width of the selected time
-                                "margin-left": res.index >= 1 ? res.index * 260 + 'px' : '0px',
-                            });
-                            if (res.patient) {
-                                $(ge).find(".o_event_title")[0].innerText = res.patient + "\n" + res.services + "\n" + res.appointment_type;
-                                console.log('===================patient app_type===', res.patient, $(ge).find(".o_event_title")[0].innerText, res.appointment_type, doctor_id);
-                            }
+                for (var j =0; j < result.length; j++) {
+                //  This is used for set the appointment on particular slot of the doctor based on the time
+                    if (j >= 0){
+                        var doctor_id = result[j].id;
+                        console.log("==============result========doctor_iddoctor_iddoctor_id=result=========",result[j] , doctor_id)
+                        _.each(gridEvent, function(ge, gi){
+                            var eventName = $(ge).find(".o_event_title")[0].innerText;
+                            rpc.query({
+                                model: 'medical.appointment',
+                                method: 'get_data',
+                                args: [false, doctor_id, eventName, j]
+                            }).then(function(res){
+                                console.log("==============res==res=======",res.index , res.patient , eventName)
+                                if (res.index >= 1) {
+                                    $(ge).css({
+                                        "padding-top": "0px",
+                                        "width": "6%",
+                                        // "background-color": "lightpink",
+                                        "margin-left": res.index * 260 + 'px',
+                                        
+                                    })
+                                    if(res.patient){
+                                        $(ge).find(".o_event_title")[0].innerText = res.patient  + "\n" + res.services
+                                        console.log('===================patientttttttttttt===' , res.patient , $(ge).find(".o_event_title")[0].innerText , doctor_id)
+                                    }
+
+                                }
+                                else{
+                                    if(res.patient){
+                                        $(ge).find(".o_event_title")[0].innerText = res.patient  + "\n" + res.services
+                                    }
+                                }
+                            })
+
                         });
-                    });
-                }
-                
+
+                    }
+                }                
 
                 var allDivColumns = $(self.fc.el.parentNode).find('.fc-slats');
                 _.each(allDivColumns, function(ge, gi) {
