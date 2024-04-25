@@ -164,7 +164,7 @@
 							<field name="civil_id"/>
 							<field name="duration_id" invisible="1"/>
 							<field name="appointment_sdate"/>
-							<field name="appointment_edate" invisible="1"/>
+							<field name="appointment_edate"/>
 							<field name="from_time" widget="float_time"  required="1" readonly="1" force_save="1"/>
 							<field name="to_time" widget="float_time"  required="1" readonly="1" force_save="1"/>
 							<field name="doctor_id"  required="1" />
