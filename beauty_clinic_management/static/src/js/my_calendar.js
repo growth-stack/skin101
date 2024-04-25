@@ -477,6 +477,8 @@ patch(CalendarCommonRenderer.prototype, 'calendar_commCalendarRenderer', {
                                         "width": "6%",
                                         // "background-color": "lightpink",
                                         "margin-left": res.index * 260 + 'px',
+                                        //center align
+                                        "text-align": "center",
                                         
                                     })
                                     if(res.patient){
