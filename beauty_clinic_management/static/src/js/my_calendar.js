@@ -489,6 +489,14 @@ patch(CalendarCommonRenderer.prototype, 'calendar_commCalendarRenderer', {
                                 }
                                 else{
                                     if(res.patient){
+                                        $(ge).css({
+                                            "padding-top": "0px",
+                                            "width": "6%",
+                                            "margin-left": res.index * 260 + 'px',
+                                            //center align
+                                            "text-align": "center",
+                                            
+                                        })
                                         $(ge).find(".o_event_title")[0].innerText = res.patient  + "\n" + res.services
                                     }
                                 }
