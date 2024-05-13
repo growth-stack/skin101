@@ -446,17 +446,15 @@ patch(CalendarCommonRenderer.prototype, 'calendar_commCalendarRenderer', {
                 });
                 
                 
-
+                var spacing = '0px'; // Adjust this value to control the spacing between grid elements
                 _.each(gridEvent, function(gride, gridi) {
                     var splitData = $(gride).css('inset').split(" ");
 
                     if (splitData.length >= 4) {
-
                         console.log("=============splitData=======111==0======",splitData[0] )
-                        $(gride).css('inset', splitData[0] + ' 0px ' + splitData[2] + ' ' + '95px');
-
+                        $(gride).css('inset', splitData[0] + ' 0px ' + splitData[2] + ' ' + spacing);
                     }
-                })
+                });
 
                 for (var j =0; j < result.length; j++) {
                 //  This is used for set the appointment on particular slot of the doctor based on the time
